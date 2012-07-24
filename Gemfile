@@ -5,7 +5,15 @@ gem 'mysql2'
 gem 'rake', '0.9.2.2'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'rmagick', :require => 'RMagick'
-gem 'ruby-debug19', :require => 'ruby-debug'
+
+group :development, :test do
+  if RUBY_VERSION =~ /1.9/
+    gem 'ruby-debug19'
+  else
+    gem 'ruby-debug'
+  end
+end
+
 gem 'thor','0.15.4'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly', '~>0.9.8'
