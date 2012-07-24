@@ -17,6 +17,7 @@ end
 gem 'thor','0.15.4'
 gem 'rack-cache', :require => 'rack/cache'
 gem 'dragonfly', '~>0.9.8'
+gem 'therubyracer'
 
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
