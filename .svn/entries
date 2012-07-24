@@ -1,14 +1,14 @@
 10
 
 dir
-243
+246
 http://192.168.1.205/repos/atk/trunk
 http://192.168.1.205/repos/atk
 
 
 
-2012-07-24T12:57:47.857532Z
-243
+2012-07-24T13:43:02.957516Z
+246
 igpuser
 
 
@@ -187,6 +187,12 @@ http://192.168.1.205/repos/atk/trunk/tmp
 script
 dir
 
+doc
+dir
+
+config
+dir
+
 .gitignore
 file
 
@@ -220,12 +226,6 @@ suenaga
 
 
 430
-
-config
-dir
-
-doc
-dir
 
 lib
 dir

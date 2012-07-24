@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/repos/atk/!svn/ver/243/trunk/db/migrate
+/repos/atk/!svn/ver/246/trunk/db/migrate
 END
 20120709141807_create_answers.rb
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 79
 /repos/atk/!svn/ver/107/trunk/db/migrate/20120709154707_add_nursery_to_users.rb
+END
+20120724131043_create_question_ratings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/atk/!svn/ver/246/trunk/db/migrate/20120724131043_create_question_ratings.rb
 END
 20120611132724_create_users.rb
 K 25

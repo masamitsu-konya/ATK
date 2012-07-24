@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/repos/atk/!svn/ver/243/trunk/app/models
+/repos/atk/!svn/ver/246/trunk/app/models
 END
 user.rb
 K 25
@@ -56,4 +56,10 @@ K 25
 svn:wc:ra_dav:version-url
 V 49
 /repos/atk/!svn/ver/244/trunk/app/models/score.rb
+END
+question_rating.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/atk/!svn/ver/246/trunk/app/models/question_rating.rb
 END
