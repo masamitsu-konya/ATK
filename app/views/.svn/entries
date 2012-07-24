@@ -1,0 +1,55 @@
+10
+
+dir
+243
+http://192.168.1.205/repos/atk/trunk/app/views
+http://192.168.1.205/repos/atk
+
+
+
+2012-07-24T12:50:07.447583Z
+241
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b7584831-a532-46ce-b807-722f8a380bd8
+
+layouts
+dir
+
+tests
+dir
+
+sessions
+dir
+
+admin
+dir
+
+ranking
+dir
+
+questions
+dir
+
+welcome
+dir
+
+apis
+dir
+
+scores
+dir
+

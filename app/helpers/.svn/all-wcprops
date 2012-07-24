@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 41
+/repos/atk/!svn/ver/236/trunk/app/helpers
+END
+scores_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/atk/!svn/ver/236/trunk/app/helpers/scores_helper.rb
+END
+tests_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/atk/!svn/ver/18/trunk/app/helpers/tests_helper.rb
+END
+application_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/atk/!svn/ver/3/trunk/app/helpers/application_helper.rb
+END
+sessions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/atk/!svn/ver/4/trunk/app/helpers/sessions_helper.rb
+END
+admin_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/atk/!svn/ver/236/trunk/app/helpers/admin_helper.rb
+END
+ranking_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/repos/atk/!svn/ver/236/trunk/app/helpers/ranking_helper.rb
+END
+questions_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/atk/!svn/ver/18/trunk/app/helpers/questions_helper.rb
+END
+welcome_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/atk/!svn/ver/4/trunk/app/helpers/welcome_helper.rb
+END
+apis_helper.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/atk/!svn/ver/236/trunk/app/helpers/apis_helper.rb
+END

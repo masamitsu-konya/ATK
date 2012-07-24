@@ -1,0 +1,326 @@
+/* variable */
+$daysone: 'Days One', sans-serif;
+$questrial: 'Questrial', sans-serif;
+$lato: 'Lato', sans-serif;
+$syncopate: 'Syncopate', sans-serif;
+$cantarell: 'Cantarell', sans-serif;
+$play: 'Play', sans-serif;
+$righteous: 'Righteous', cursive;
+$set_prefix: -webkit-, -moz-, -ms-, -o-, '';
+
+/* mixin */
+@mixin radius($radius: 4px) {
+  @each $prefix in $set_prefix {
+    #{$prefix}border-radius: $radius;
+  }
+}
+@mixin gradient($startColor: #f7f7f7, $endColor: #f5f5f5) {
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=$startColor, endColorstr=$endColor, GradientType=0);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from($startColor), to($endColor));
+  @each $prefix in $set_prefix {
+    background-image: #{$prefix}linear-gradient(top, $startColor, $endColor);
+  }
+}
+@mixin boxShadow($hShadow: 0, $vShadow: 2px, $blur: 3px, $spread: 0, $color: rgba(0, 0, 0, 0.3)) {
+  -webkit-box-shadow: $hShadow $vShadow $blur $spread $color;
+  -moz-box-shadow: $hShadow $vShadow $blur $spread $color;
+  box-shadow: $hShadow $vShadow $blur $spread $color;
+}
+@mixin boxShadowInset($hShadow: 0, $vShadow: 0, $blur: 5px, $spread: 0, $color: rgba(0, 0, 0, 0.3)) {
+  -webkit-box-shadow: inset $hShadow $vShadow $blur $spread $color;
+  -moz-box-shadow: inset $hShadow $vShadow $blur $spread $color;
+  box-shadow: inset $hShadow $vShadow $blur $spread $color;
+}
+@mixin textShadow() {
+  text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
+}
+
+/* base */
+* {
+  font-family: 'メイリオ', Meiryo, 'Muli', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+html {
+  height: 100%;
+  
+  body {
+    height: 100%;
+    margin: 0;
+    padding: 63px 0 0 0;
+    
+    h1, h2, h3, h4, h5, h6, p, ul, li {
+      line-height: 1.5em;
+      margin: 0;
+      padding: 0;
+    }
+
+    p {
+      color: #555;
+    }
+  }
+}
+
+/* parts */
+.ffhelveticaneue {font-family: "Helvetica Neue", Helvetica !important;}
+.flnone {float: none !important;}
+.mt0 {margin-top: 0px !important;}
+.mr0 {margin-right: 0px !important;}
+.mb0 {margin-bottom: 0px !important;}
+.mb5 {margin-bottom: 5px !important;}
+.mb10 {margin-bottom: 10px !important;}
+.mb20 {margin-bottom: 20px !important;}
+.mb40 {margin-bottom: 40px !important;}
+.ml0 {margin-left: 0px !important;}
+.mhauto {margin: 0 auto !important;}
+
+/* individual */
+/* frame */
+.container {
+  min-height: 100%;
+  padding-bottom: 40px;
+}
+.footer {
+  height: 40px;
+  margin: -40px 0 0;
+  position: relative;
+  .navbar-inner {
+    @include radius($radius: 0);
+  }
+}
+/* logo */
+.navbar-fixed-top .brand {
+  color: #000;
+  font-family: $daysone;
+  font-size: 23px;
+  text-shadow: 0 1px 0 rgba(255,255,255,.12), 0 0 30px rgba(255,255,255,.2);
+}
+/* carousel */
+.carousel {
+  @include radius();
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  
+  .carousel-inner {
+    margin: 20px 55px 0 55px;
+    width: 660px;
+    
+    .categories {
+      @include boxShadow();
+      @include gradient();
+      @include radius();
+      border: 1px solid #f0f0f0;
+      float: left;
+      margin: 0 0 20px 20px;
+      padding: 10px 0;
+      text-align: center;
+      width: 138px;
+
+      h3 {
+        @include textShadow();
+        font-family: $cantarell;
+        font-size: 16px;
+        text-shadow: 0 1px 0 rgba(255,255,255,.3), 0 0 5px rgba(255,255,255,.5);
+      }
+
+      a {
+        margin: 10px 0 0 0;
+      }
+    }
+
+    .categories:hover {
+      @include boxShadow($color: rgba(0, 0, 0, .5));
+      @include gradient($startColor: #eeeeee, $endColor: #ececec);
+      @include radius();
+      border: 1px solid #e8e8e8;
+      
+      h3 {
+        color: #000;
+      }
+    }
+  }
+
+  .carousel-control {
+    top: 49%;
+  }
+}
+/* box */
+.box {
+  @include radius();
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  
+  .levels {
+    padding: 20px;
+    
+    h3 {
+      border-bottom: 1px solid #d5d5d5;
+      color: #888;
+    }
+  }
+}
+
+/* pages */
+/* welcome */
+.user-info {
+  
+  img {
+    margin: 0 0 10px 0;
+  }
+
+  .name {
+    font-size: 24px;
+    line-height: 1.5em;
+  }
+  
+}
+.level-info {
+  
+  div {
+    @include radius();
+    background: #eee;
+    border: 1px solid #d5d5d5;
+    margin: 0 0 3px;
+    overflow: hidden;
+    padding: 3px 10px;
+  }
+
+  h5 {
+    float: left;
+    color: #888;
+  }
+
+  span {
+    color: #888;
+    float: right;
+    font-weight: bold;
+  }
+}
+/* tests */
+.srch-box {
+  @include radius();
+  background: #fcfcfc;
+  border: 1px solid #e5e5e5;
+}
+.take-test-box {
+  padding: 20px;
+
+  h2 {
+    font-family: $cantarell;
+    font-size: 30px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+.category-info-box {
+  font-family: $cantarell;
+  margin: 0 0 20px 0;
+}
+.questioner-box {
+  display: none;
+
+  .img {
+    float: left;
+    margin: 0 5px 5px 0;
+  }
+
+  .info {
+    color: #888;
+  }
+
+}
+.question-box {
+  @include radius();
+  @include gradient($startColor: #f8f8f8, $endColor: #fff);
+  @include boxShadowInset();
+  border: 1px solid #d5d5d5;
+  margin: 0 0 10px 0;
+  padding: 40px;
+
+  p {
+    font-size: 24px;
+  }
+}
+.progress {
+  @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+  height: 40px !important;
+  border: 1px solid #d5d5d5;
+  margin: 0 0 40px;
+
+  .bar {
+    height: 40px !important;
+  }
+}
+.result-box {
+  display: none;
+  height: 40px;
+  margin-bottom: 42px;
+}
+.result-box .box {
+  @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+  @include gradient($startColor: #f8f8f8, $endColor: #fff);
+  @include radius();
+  height: 28px;
+  padding: 10px 0 0 0;
+  text-align: center;
+}
+.result-box .title {
+  color: #888;
+  margin-right: 10px;
+}
+.result-box .title + span {
+  color: #555;
+  font-size: 18px;
+  font-weight: bold;
+}
+.result-box .btn-box {
+  float: left;
+  margin-left: 30px;
+  width: 164px;
+}
+.result-box .btn-box .btn-large {
+  font-size: 20px;
+  height: 38px;
+  padding: 0;
+  width: 164px;
+}
+.answer-box {
+  a {
+    @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+    @include gradient($startColor: #f8f8f8, $endColor: #fff);
+    @include radius();
+    border: 1px solid #d5d5d5;
+    color: #555;
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  a:hover {
+    @include boxShadowInset($color: rgba(0, 0, 0, 0));
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, .1));
+    @include gradient($startColor: #e3eef5, $endColor: #e3eef5);
+    border: 1px solid #b8c8d2;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .right-answer, .right-answer:hover {
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, 0));
+    @include gradient($startColor: #4ad63e, $endColor: #36c42a);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .no-right-answer, .no-right-answer:hover {
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, 0));
+    @include gradient($startColor: #de4646, $endColor: #cd3535);
+    color: #fff;
+    font-weight: bold;
+  }
+}

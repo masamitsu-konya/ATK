@@ -1,0 +1,22 @@
+<h1>UI認証ページ/<%=link_to 'カテゴリー編集',:action=> :category %></h1>
+
+<table class="table">
+  <thead>
+    <tr>
+      <th>ユーザーID</th>
+      <th>問題ID</th>
+      <th>編集</th>
+      <th>公開</th>
+    <tr>
+  </thead>
+  <tbody>
+<% @unpublic_questions.each do |question| %>
+  <tr>
+    <td width="100"><%= question.user_question.user.id if question.user_question %></td>
+    <td width="100"><%=question.id %></td>
+    <td width="100"><%=link_to '問題編集', :action=> :edit_question, :id =>question.id %></td>
+    <td><a href="javascript:void(0)" id="<%=question.id %>" class="change_flg">公開する</a></td>
+  </tr>
+<% end %>
+<table>
+

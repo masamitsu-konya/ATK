@@ -1,0 +1,10 @@
+<div class="active item">
+  <% @recommend_categories.each do |category| %>
+    <div class="categories">
+      <h3><%= category.category_name %></h3>
+      <%= image_tag category.category_image.thumb('40x40#').url, :size => '40x40' if category.category_image %>
+      <%= link_to "テストを受ける", {:controller => :tests, :action => :take_test, :id => category.id}, {:class => 'btn btn-small btn-primary'} %>
+    </div>
+  <% end %>
+</div>
+<input type="hidden" id="<%=@next_offset%>" class="offset">

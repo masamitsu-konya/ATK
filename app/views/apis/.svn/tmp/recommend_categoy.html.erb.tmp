@@ -1,0 +1,19 @@
+<div class="active item">
+  <% @categories.each do |category| %>
+    <div class="categories">
+      <h3><%= category.category_name %></h3>
+<<<<<<< .mine
+      <%= image_tag category.category_image.thumb('40x40#').url if category.category_image %>
+      <% if category.questions.present? %>
+        <%= link_to "テストを受ける", {:controller => :tests, :action => :take_test, :id => category.id}, {:class => 'btn btn-primary'} %>
+      <% else %>
+        <a href="#" class="btn">ただいま準備中</a>
+      <%end%>
+=======
+      <%= image_tag category.category_image.thumb('40x40#').url, :size => '40x40' if category.category_image %>
+      <%= link_to "テストを受ける", {:controller => :tests, :action => :take_test, :id => category.id}, {:class => 'btn btn-small btn-primary'} %>
+>>>>>>> .r228
+    </div>
+  <% end %>
+</div>
+<input type="hidden" id="<%=@next_offset%>" class="offset">

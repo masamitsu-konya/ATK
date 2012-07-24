@@ -1,0 +1,44 @@
+<div class="top_box" style=" width: 600px; margin-left:100px; border: 1px solid #B5D8EE; background: white;"> <!-- Only required for left/right tabs -->
+  <ul class="nav nav-tabs" id="#myTab">
+    <li class="active"><a href="#profile" data-toggle="tab">プロフィール</a></li>
+    <li><a href="#account" data-toggle="tab">アカウント</a></li> 
+    <li><a href="#account" data-toggle="tab">Social Networks</a></li>
+    <li><a href="#account" data-toggle="tab">Sharing Option</a></li>
+  </ul>
+  <div class="tab-content"style="margin-left: 50px;">
+    <div class="tab-pane active" id="profile"> 
+      <%= form_for (@user), :url=>{:action => 'edit'} do |f| %>
+        <div class="profile_box">
+          <div class="user_picture">
+            <img src=<%=current_user.image_url %> width="100" height="100" alt="" />
+          </div>
+          <div class="user_form_up">
+            <p class="title" style="margin-top: 10px;">ニックネーム</p>
+            <input id="user_nickname" class="text" name="user[nickname]" size="30" type="text" class="span3" value="<%=current_user.nickname %>">
+            <p class="title" style="margin-top: 10px;">名前</p>
+            <input class="text" size="30" type="text" placeholder="名前を入力してください。" class="span3" value="<%=current_user.last_name || current_user.nickname%><%=current_user.first_name %>"> 
+          </div>
+          <div class="user_form_bottom">
+            <p class="title" style="margin-top: 10px;">メールアドレス</p>
+            <input class="text span5" name="user[email]"  size="30" type="text" placeholder="メールアドレスを入力してください。" value=""> 
+            <p class="title" style="margin-top: 10px;">住所</p>
+            <input class="text span5" name="user[location]"  size="30" type="text" placeholder="住所を入力してください。" value="<%=current_user.location %>"> 
+            <p class="title" style="margin-top: 10px;">趣味</p>
+            <input class="text span5" size="30" type="text" placeholder="趣味を入力してください。">
+            <p class="title" style="margin-top: 10px;">会社名</p>
+            <input class="text span5" name="user[company]" size="30" type="text" placeholder="趣味を入力してください。" value="<%=current_user.company %>">
+            <p class="title" style="margin-top: 10px;">website</p>
+            <input class="text span5" size="30" type="text" placeholder="websiteを入力してください。">
+          </div>
+        </div>
+      <% end %>
+    </div>
+    <div class="tab-pane" id="account"> 
+      <div class="user_form_bottom">
+        <p class="title" style="margin-top: 10px;">パスワード</p>
+        <input class="text span5" size="30" type="text" placeholder="パスワードを入力してください。">
+        <input class="text span5" name="user[company]" size="30" type="text" placeholder="再度パスワードを入力してください。" value="">
+      </div>
+    </div>
+  </div>
+</div>

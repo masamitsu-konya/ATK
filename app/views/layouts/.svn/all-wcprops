@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/atk/!svn/ver/228/trunk/app/views/layouts
+END
+_header.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/atk/!svn/ver/228/trunk/app/views/layouts/_header.html.erb
+END
+_carousel.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/atk/!svn/ver/17/trunk/app/views/layouts/_carousel.html.erb
+END
+_footer.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/atk/!svn/ver/227/trunk/app/views/layouts/_footer.html.erb
+END
+application.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/atk/!svn/ver/227/trunk/app/views/layouts/application.html.erb
+END

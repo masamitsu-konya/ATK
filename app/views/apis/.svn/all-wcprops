@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/atk/!svn/ver/235/trunk/app/views/apis
+END
+top_recommend_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/atk/!svn/ver/228/trunk/app/views/apis/top_recommend_category.html.erb
+END
+past_test_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/atk/!svn/ver/227/trunk/app/views/apis/past_test_category.html.erb
+END
+recommend_categoy.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/atk/!svn/ver/235/trunk/app/views/apis/recommend_categoy.html.erb
+END

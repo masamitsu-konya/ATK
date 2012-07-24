@@ -1,0 +1,26 @@
+<div id="carouselWrap">
+  <div id="carouselPrev" style="width:50px;"><img src="/prev.png" width="50" height="50"></div>
+  <div id="carousel">
+    <div id="carouselInner">
+      <ul class="column">
+       <li><a href="/tests/take_test?id=1"><img src="/1.png" alt="" /></a></li>
+       <li><a href="#"><img src="/1.png" alt="" /></a></li>
+       <li><a href="#"><img src="/1.png" alt="" /></a></li>
+       <li><a href="#"><img src="/1.png" alt="" /></a></li>
+      </ul>
+      <ul class="column">
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+      </ul>
+      <ul class="column">
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+       <li><a href="#"><img src="./" alt="" /></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="carouselNext" style="width:50px; margin-left: 200px;"><img src="/next.png"  width="50" height="50" style="margin-left: 400px;"></div>
+</div>

@@ -1,0 +1,12 @@
+
+<%= form_for (@category), :class=> "well form-inline color_change", :url=>{:action => 'finish_category', :id=>@category.id }, :html => {:multipart => true} do |f| %>
+   <p class="title" style="margin-top: 15px;">Category name</p>
+   <%= f.text_field :category_name %>
+   <%= f.file_field :category_image %>
+   <button type="submit" class="btn btn-warning" style="margin-top: 20px;">変更する</button>
+<% end %>
+
+<% if @category.category_image %>
+  ※現在の画像
+  <%= image_tag @category.category_image.url %> 
+<% end %>

@@ -1,0 +1,46 @@
+10
+
+dir
+243
+http://192.168.1.205/repos/atk/trunk/app
+http://192.168.1.205/repos/atk
+
+
+
+2012-07-24T12:57:47.857532Z
+243
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+b7584831-a532-46ce-b807-722f8a380bd8
+
+assets
+dir
+
+helpers
+dir
+
+models
+dir
+
+controllers
+dir
+
+mailers
+dir
+
+views
+dir
+

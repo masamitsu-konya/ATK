@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/atk/!svn/ver/223/trunk/app/views/admin
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/repos/atk/!svn/ver/222/trunk/app/views/admin/index.html.erb
+END
+edit_question.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/atk/!svn/ver/180/trunk/app/views/admin/edit_question.html.erb
+END
+category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/repos/atk/!svn/ver/223/trunk/app/views/admin/category.html.erb
+END
+edit_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/atk/!svn/ver/201/trunk/app/views/admin/edit_category.html.erb
+END

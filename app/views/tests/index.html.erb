@@ -1,0 +1,35 @@
+<div class="row">
+  <%= form_tag({:action => 'search_test'}, {:class => 'well form-search span8 offset2'}) do %>
+    <div class="control-group mb0">
+      <div class="controls">
+        <div class="input-append">
+          <input id="search_words" class="search-query span7" name="search_words" type="text" /><button class="btn span1 flnone" name="commit" type="submit"><i class="icon-search"></i></button>
+        </div>
+      </div>
+    </div>
+  <% end%>
+</div>
+
+<div class="row">
+  <h2 class="span8 offset2 mb10">おすすめのテスト</h2>
+  <div id="recommendTests" class="carousel slide span8 offset2 mb40">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left ffhelveticaneue" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right ffhelveticaneue" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+  </div>
+</div>
+
+<div class="row">
+  <h2 class="span8 offset2 mb10">過去に受けたテスト</h2>
+  <div id="pastTests" class="carousel slide span8 offset2 mb40">
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+    </div>
+    <!-- Carousel nav -->
+    <a class="carousel-control left ffhelveticaneue" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+    <a class="carousel-control right ffhelveticaneue" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+  </div>
+</div>

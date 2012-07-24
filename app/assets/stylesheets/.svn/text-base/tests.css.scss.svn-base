@@ -1,0 +1,17 @@
+.hide_box{
+  margin: 10px;
+  position: absolute;
+  z-index: 1040;
+  width: 500px;
+  height: 400px;
+  background: black;
+  opacity: 0.5;
+  display: none;
+}
+.question_category_box{
+  width: 160px; 
+  height:100px; 
+  float:left; 
+  border:1px solid #B5D8EE; 
+  margin: 30px;
+}

@@ -1,0 +1,15 @@
+// Place all the styles related to the ranking controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.ranking_list{
+  list-style-type:none; 
+  margin: 20px;
+}
+
+.past_test_list{
+  float:left
+}
+.ranking_list{
+  margin-left: 180px;
+}

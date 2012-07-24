@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 40
+/repos/atk/!svn/ver/243/trunk/db/migrate
+END
+20120709141807_create_answers.rb
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/atk/!svn/ver/107/trunk/db/migrate/20120709141807_create_answers.rb
+END
+20120709154707_add_nursery_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/atk/!svn/ver/107/trunk/db/migrate/20120709154707_add_nursery_to_users.rb
+END
+20120611132724_create_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/atk/!svn/ver/82/trunk/db/migrate/20120611132724_create_users.rb
+END
+20120724125136_create_scores.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/atk/!svn/ver/243/trunk/db/migrate/20120724125136_create_scores.rb
+END
+20120614152210_create_user_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/atk/!svn/ver/17/trunk/db/migrate/20120614152210_create_user_questions.rb
+END
+20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/repos/atk/!svn/ver/182/trunk/db/migrate/20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
+END
+20120614151847_create_category_of_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/atk/!svn/ver/206/trunk/db/migrate/20120614151847_create_category_of_questions.rb
+END
+20120717152917_create_user_friends.rb
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/atk/!svn/ver/167/trunk/db/migrate/20120717152917_create_user_friends.rb
+END
+20120719154109_create_rankings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/atk/!svn/ver/205/trunk/db/migrate/20120719154109_create_rankings.rb
+END
+20120614152005_create_questions.rb
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/atk/!svn/ver/17/trunk/db/migrate/20120614152005_create_questions.rb
+END

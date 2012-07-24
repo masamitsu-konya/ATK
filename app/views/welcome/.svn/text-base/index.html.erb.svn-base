@@ -1,0 +1,127 @@
+<div class="row">
+  <div class="span8">
+    
+    <div class="row">
+      <h2 class="mb10">おすすめのテスト</h2>
+      <div id="topTests" class="carousel slide mb40">
+        <!-- Carousel items -->
+        <div class="carousel-inner">
+          <div class="active item">
+            <% @recommend_categories[0..3].each do |category| %>
+              <div class="categories">
+                <h3><%= category.category_name %></h3>
+                <%= image_tag category.category_image.thumb('40x40#').url, :size => '40x40' if category.category_image %>
+                <%= link_to "テストを受ける", {:controller => :tests, :action => :take_test, :id => category.id}, {:class => 'btn btn-small btn-primary'} %>
+              </div>
+            <% end %>
+          </div>
+          <input type="hidden" id="3" class="offset">
+        </div>
+        <!-- Carousel nav -->
+        <a class="carousel-control left ffhelveticaneue" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+        <a class="carousel-control right ffhelveticaneue" href="#myCarousel" data-slide="next">&rsaquo;</a> 
+      </div>
+    </div>
+    
+    <div class="row">
+      <h2 class="mb10">あなたのスキル</h2>
+      <div class="box">
+        <div class="levels">
+          <h3>MASTER</h3>
+          <div>
+            <%@user_master_skills.each do |master_skill| %>
+              <%= master_skill.category_of_question.category_name%>
+              <%= master_skill.score%>
+            <% end %>
+          </div>
+        </div>
+        <div class="levels">
+          <h3>EXPERT</h3>
+          <div>
+            <%@user_expert_skills.each do |expert_skill| %>
+              <%= expert_skill.category_of_question.category_name %>
+              <%= expert_skill.score%>
+            <% end %>
+          </div>
+        </div>
+        <div class="levels">
+          <h3>PROFICIENT</h3>
+          <div>
+            <%@user_proficient_skills.each do |proficient_skill| %>
+              <%= proficient_skill.category_of_question.category_name %>
+              <%= proficient_skill.score %>
+            <% end %>
+          </div>
+        </div>
+        <div class="levels">
+          <h3>FAMILIAR</h3>
+          <div>
+            <%@user_proficient_skills.each do |familiar_skill| %>
+              <%= familiar_skill.category_of_question.category_name %>
+              <%= familiar_skill.score %>
+            <% end %>
+          </div>
+        </div>
+        <div class="levels">
+          <h3>BEGINER</h3>
+          <div>
+            <%@user_beginner_skills.each do |beginner_skill| %>
+              <%= beginner_skill.category_of_question.category_name %>
+              <%= beginner_skill.score %>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="span3 offset1">
+    <div class="user-info mb40">
+      <img src=<%=current_user.image_url %> width="50" height="50" alt="" /><br />
+      <span class="name"><%= current_user.last_name || current_user.nickname %>&nbsp;<%= current_user.first_name %></span><br />
+      <%= current_user.company %><br />
+      <%= current_user.location %><br />
+      <%= link_to 'Setting', :action => "profile", :id => current_user.id %>
+    </div>
+    <div class="mb40">
+      <h3>あなたが出題した問題</h3>
+      <% @user_questions_categories.each do |user_questions_category| %>
+        問題数： <%= @user.questions.where(:category_of_question_id => user_questions_category.id).count %>個<br />
+        カテゴリー： <%=link_to user_questions_category.category_name, :controller =>'tests', :action =>'take_test',:id => user_questions_category.id  %> 
+      <% end %>
+    </div>
+    <h4>スキルレベル</h4>
+    <div class="level-info">
+      <div>
+        <h5>MASTER</h5>
+        <span>780-800</span>
+      </div> 
+      <div>
+        <h5>EXPERT</h5>
+        <span>700-779</span>
+      </div>
+      <div>
+        <h5>PROFICIENT</h5>
+        <span>450-699</span>
+      </div> 
+      <div>
+        <h5>FAMILIAR</h5>
+        <span>300-449</span>
+      </div> 
+      <div>
+        <h5>BIGINNER</h5>
+        <span>0-299</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+<script type="text/javascript">
+  if (window.location.hash == '#_=_')window.location.hash = '';
+</script>

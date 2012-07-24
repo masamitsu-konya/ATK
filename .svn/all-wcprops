@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 29
+/repos/atk/!svn/ver/243/trunk
+END
+Gemfile.lock
+K 25
+svn:wc:ra_dav:version-url
+V 42
+/repos/atk/!svn/ver/226/trunk/Gemfile.lock
+END
+Rakefile
+K 25
+svn:wc:ra_dav:version-url
+V 36
+/repos/atk/!svn/ver/2/trunk/Rakefile
+END
+README.rdoc
+K 25
+svn:wc:ra_dav:version-url
+V 39
+/repos/atk/!svn/ver/2/trunk/README.rdoc
+END
+.gitignore
+K 25
+svn:wc:ra_dav:version-url
+V 38
+/repos/atk/!svn/ver/5/trunk/.gitignore
+END
+Gemfile
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/atk/!svn/ver/207/trunk/Gemfile
+END
+config.ru
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/atk/!svn/ver/2/trunk/config.ru
+END

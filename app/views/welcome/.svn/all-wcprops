@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/repos/atk/!svn/ver/235/trunk/app/views/welcome
+END
+index.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/atk/!svn/ver/229/trunk/app/views/welcome/index.html.erb
+END
+login.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/atk/!svn/ver/39/trunk/app/views/welcome/login.html.erb
+END
+profile.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/atk/!svn/ver/235/trunk/app/views/welcome/profile.html.erb
+END

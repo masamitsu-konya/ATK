@@ -1,0 +1,99 @@
+<div class="row">
+  
+  <div class="span2">
+    <h1 class="category-info-box">
+      <%= image_tag @test.category_of_question.category_image.url %>   
+      <%= @test.category_of_question.category_name %>
+    </h1>
+    <div class="questioner-box">
+       <div class="img">
+         <% if @test.user_question %>
+           <img src=<%=@test.user_question.user.image_url %> width="50" height="50" alt="" />
+         <% end %>
+       </div>
+       <div class="info">
+         この問題はATKのメンバーによって<%=@test.created_at.to_date%>に作られました。
+       </div>
+     </div>
+  </div>
+  
+  <div class="span8">
+
+    <div class="question-box">
+      <p class="question"></p>
+    </div>
+
+    <div class="progress progress-striped active">
+      <div class="bar" style="width 100%;"></div>
+    </div>
+    
+    <div class="result-box row">
+      <div class="span2 box">
+        <span class="title">問題ランク</span>
+        <span class="question_level"><%= @test_rank%></span>
+      </div>
+      <div class="span2 box">
+        <span class="title">点数</span>
+        <span class="question_point"></span>
+      </div>
+      <div class="span2 box">
+        <span class="title">合計</span>
+        <span class="test_sum_score"></span>
+      </div>
+      <div class="btn-box">
+        <%= form_tag :action => "test" do %>
+          <input type="hidden" class="category_of_question_id" name="category_of_question_id" value="<%=@test.category_of_question_id%>">
+          <input type="hidden" class="question_id" name="question_id" value="<%= @test.id%>">
+          <input type="hidden" class="question_result" name="question_result">
+          <input type="hidden" class="sum_count" name="sum_count">
+          <input type="hidden" class="count" name="count">
+          <input id="next_question" type="submit" class="btn btn-large btn-primary" value="次の問題へ" onClick="location.href='/tests/test'">
+        <% end %>
+      </div>
+    </div>
+ 
+    <div class="answer-box">
+      <a href="javascript:void(0)" id="answer1"></a>
+      <a href="javascript:void(0)" id="answer2"></a>
+      <a href="javascript:void(0)" id="answer3"></a>
+      <a href="javascript:void(0)" id="answer4"></a>
+    </div>
+    
+    <div class="hide-box"></div>
+
+  </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div class="hide_box"></div>
+</div>
+<script>
+var answer = new Array(<%= raw @test.correct_answer.to_json%>, <%= raw @test.answer_1.to_json%>, <%= raw @test.answer_2.to_json%>, <%= raw @test.answer_3.to_json%> );
+var question = <%= raw @test.question.to_json %>;
+var question_id = <%= raw @test.id.to_s.to_json %>;
+var correct_answer = <%= raw @test.correct_answer.to_json %>;
+var user_id = <%= raw current_user.id.to_s.to_json %>
+var category_id = <%= raw@test.category_of_question_id.to_s.to_json %>;
+var question_count = <%= raw @count.to_s.to_json %>;
+var score_s = <%= raw @score.to_s.to_json %>;
+</script>

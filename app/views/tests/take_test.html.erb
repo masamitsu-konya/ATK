@@ -1,0 +1,12 @@
+<div class="row">
+  <div class="span8 offset2 box">
+    <div class="take-test-box">
+      <h2>
+        <%= image_tag @test_category.category_image.thumb('40x40#').url, :size => '40x40' if @test_category.category_image %><br />
+        <%= @test_category.category_name %>
+      </h2>
+      <p>まずは練習問題を解いてみましょう</p>
+      <%= link_to "練習問題を受ける", {:action => :test_practice, :id => @test_category.id}, {:class => "btn btn-primary btn-large"} %>
+    </div>
+  </div>
+</div>
