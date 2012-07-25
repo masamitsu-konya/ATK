@@ -1,15 +1,15 @@
 10
 
 dir
-246
+248
 http://192.168.1.205/repos/atk/trunk/app/assets/images
 http://192.168.1.205/repos/atk
 
 
 
-2012-06-11T03:16:30.132825Z
-2
-suenaga
+2012-07-24T17:40:15.909492Z
+248
+igpuser
 
 
 
@@ -25,6 +25,40 @@ suenaga
 
 
 b7584831-a532-46ce-b807-722f8a380bd8
+
+auth.png
+file
+
+
+
+
+2012-07-25T09:16:52.000000Z
+6bd22ed08cd40196aa4d8c7267b28080
+2012-07-24T17:40:15.909492Z
+248
+igpuser
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11975
 
 rails.png
 file

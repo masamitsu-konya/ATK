@@ -34,6 +34,11 @@ $set_prefix: -webkit-, -moz-, -ms-, -o-, '';
 @mixin textShadow() {
   text-shadow: 0 1px 0 rgba(0, 0, 0, 0.12);
 }
+@mixin opacity($opacity: 0.8){
+  filter: alpha(opacity=$opacity*100);
+  -moz-opacity:$opacity;
+  opacity:$opacity;
+}
 
 /* base */
 * {
@@ -47,7 +52,7 @@ html {
   body {
     height: 100%;
     margin: 0;
-    padding: 63px 0 0 0;
+    padding: 83px 0 0 0;
     
     h1, h2, h3, h4, h5, h6, p, ul, li {
       line-height: 1.5em;
@@ -73,6 +78,7 @@ html {
 .mb40 {margin-bottom: 40px !important;}
 .ml0 {margin-left: 0px !important;}
 .mhauto {margin: 0 auto !important;}
+.ph4 {padding-right: 4px !important; padding-left: 4px !important;}
 
 /* individual */
 /* frame */
@@ -196,6 +202,24 @@ html {
     font-weight: bold;
   }
 }
+.auth {
+  @include radius($radius: 90px);
+  border: 5px solid #fff;
+  display: block;
+  height: 160px;
+}
+.auth:hover {
+  @include opacity();
+}
+.facebook {
+  background: #3b5997 url(/assets/auth.png) no-repeat 54px 27px;
+}
+.twitter {
+  background: #3f98cf url(/assets/auth.png) no-repeat -159px 27px;
+}
+.github {
+  background: #cacaca url(/assets/auth.png) no-repeat -345px 31px;
+}
 /* tests */
 .srch-box {
   @include radius();
@@ -244,6 +268,16 @@ html {
     font-size: 24px;
   }
 }
+.question-textarea {
+  @include radius();
+  @include gradient($startColor: #f8f8f8, $endColor: #fff);
+  @include boxShadowInset();
+  border: 1px solid #d5d5d5;
+  font-size: 18px;
+  height: 150px;
+  margin: 0 0 10px 0;
+  padding: 20px;
+}
 .progress {
   @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
   height: 40px !important;
@@ -288,7 +322,7 @@ html {
   width: 164px;
 }
 .answer-box {
-  a {
+  a, input[type="text"] {
     @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
     @include gradient($startColor: #f8f8f8, $endColor: #fff);
     @include radius();

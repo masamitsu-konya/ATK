@@ -1,7 +1,8 @@
 source 'https://rubygems.org'
 
-gem 'rails', '3.2.6'
+gem 'mysql'
 gem 'mysql2'
+gem 'rails', '3.2.6'
 gem 'rake', '0.9.2.2'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'rmagick', :require => 'RMagick'

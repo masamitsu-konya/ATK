@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/repos/atk/!svn/ver/235/trunk/app/views/welcome
+/repos/atk/!svn/ver/248/trunk/app/views/welcome
 END
 index.html.erb
 K 25
@@ -12,8 +12,8 @@ END
 login.html.erb
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/atk/!svn/ver/39/trunk/app/views/welcome/login.html.erb
+V 62
+/repos/atk/!svn/ver/248/trunk/app/views/welcome/login.html.erb
 END
 profile.html.erb
 K 25
