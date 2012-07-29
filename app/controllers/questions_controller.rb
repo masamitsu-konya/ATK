@@ -1,6 +1,6 @@
 
 class QuestionsController < ApplicationController
-  
+  before_filter :login_check  
   def new
     @category_of_question = CategoryOfQuestion.new
   end
@@ -19,6 +19,7 @@ class QuestionsController < ApplicationController
     @question = Question.new(params[:question])
     @question.update_attributes(params[:question])
     @question.save
+    @category_id = @question.category_of_question_id
   end
 
   def upload

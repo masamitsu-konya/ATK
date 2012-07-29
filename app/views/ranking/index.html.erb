@@ -1,20 +1,26 @@
-<div class="ranking_box">
-  <div class="past_test_list">
-    <%@past_test_categories.each do |category| %>
-      <li class="ranking_list">
-        <a href="/ranking/index?id=<%=category.id%>"><%= image_tag category.category_image.thumb('40x40#').url  if category.category_image%></a>
-      </li>
-    <% end %>
-  </div>
+<% if @past_test_categories%> 
+  <div class="ranking_box">
+    <div class="past_test_list">
+      <%@past_test_categories.each do |category| %>
+        <li class="ranking_list">
+          <a href="/ranking/index?id=<%=category.id%>"><%= image_tag category.category_image.thumb('40x40#').url  if category.category_image%></a>
+        </li>
+      <% end %>
+    </div>
 
-  <div class="ranking_list">
-    <h1>#Yourfriends <%=@ranking_category.category_name%> Ranking#</h1>
-    <%@ranking.each do |rank| %>
-      <li class="ranking_list">   
-        <%=rank.rank%>
-        <img src=<%=rank.user.image_url %> width="50" height="50" alt="" />
-        <%= rank.user.last_name %>
-      </li>
-    <% end %>
+    <div class="ranking_list">
+      <h1>#Yourfriends <%=@ranking_category.category_name%> Ranking#</h1>
+      <%@ranking.each do |rank| %>
+        <li class="ranking_list">   
+          <%=rank.rank%>
+          <img src=<%=rank.user.image_url %> width="50" height="50" alt="" />
+          <%= rank.user.last_name %>
+        </li>
+      <% end %>
+    </div>
   </div>
-</div>
+<% else %>
+  <div id ="notify_take_test">
+  <p>まだテスト受けてないよ！早くうけようよ！</p>
+  </div>
+<% end %>

@@ -1,6 +1,11 @@
 # coding: utf-8
 class SessionsController < ApplicationController
 
+
+  def login_request
+    
+  end
+
   def login
     auth = request.env['omniauth.auth']
     p request.env['omniauth.auth']
@@ -8,6 +13,8 @@ class SessionsController < ApplicationController
    
     session[:user_id] = user.id
     #logger.debug auth.to_yaml
+    # 毎回更新 友達情報
+    UserFriend.create_user_friends(@user)
     redirect_to root_url, :notice => 'ログインしました。'
   end
    

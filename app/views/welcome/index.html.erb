@@ -31,7 +31,7 @@
           <div>
             <%@user_master_skills.each do |master_skill| %>
               <%= master_skill.category_of_question.category_name%>
-              <%= master_skill.score%>
+              <%= master_skill.score.to_i%>
             <% end %>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div>
             <%@user_expert_skills.each do |expert_skill| %>
               <%= expert_skill.category_of_question.category_name %>
-              <%= expert_skill.score%>
+              <%= expert_skill.score.to_i%>
             <% end %>
           </div>
         </div>
@@ -49,16 +49,16 @@
           <div>
             <%@user_proficient_skills.each do |proficient_skill| %>
               <%= proficient_skill.category_of_question.category_name %>
-              <%= proficient_skill.score %>
+              <%= proficient_skill.score.to_i %>
             <% end %>
           </div>
         </div>
         <div class="levels">
           <h3>FAMILIAR</h3>
           <div>
-            <%@user_proficient_skills.each do |familiar_skill| %>
+            <%@user_familiar_skills.each do |familiar_skill| %>
               <%= familiar_skill.category_of_question.category_name %>
-              <%= familiar_skill.score %>
+              <%= familiar_skill.score.to_i %>
             <% end %>
           </div>
         </div>
@@ -67,7 +67,7 @@
           <div>
             <%@user_beginner_skills.each do |beginner_skill| %>
               <%= beginner_skill.category_of_question.category_name %>
-              <%= beginner_skill.score %>
+              <%= beginner_skill.score.to_i %>
             <% end %>
           </div>
         </div>

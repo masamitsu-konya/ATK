@@ -14,7 +14,7 @@ Atk::Application.routes.draw do
   # for omniauth settings
   match '/auth/:provider/callback' => 'sessions#login'
   match '/logout' => 'sessions#logout', :as => :logout
-  match '/login' => 'welcome#login'
+  match '/login' => 'sessions#login_request'
 
   match ':controller(/:action(/:id))(.:format)'
   

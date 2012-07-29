@@ -9,4 +9,10 @@ class ApplicationController < ActionController::Base
   def user_friends
     @user ? @user_friends = @user.user_friends : @user_friends=nil
   end 
+
+  def login_check
+    if session[:user_id].blank?
+      redirect_to :controller => "sessions", :action => "login_request"      
+    end
+  end
 end

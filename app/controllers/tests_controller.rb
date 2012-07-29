@@ -1,12 +1,17 @@
 #coding: utf-8
 class TestsController < ApplicationController
+  before_filter :login_check
   def index
     @categories = CategoryOfQuestion.all
   end
 
   def search_test
-    @title_of_test = CategoryOfQuestion.where(:category_name => params[:search_words]).first if params[:search_words]
-    redirect_to :action => :take_test, :id => @title_of_test.id
+    if params[:search_words] && CategoryOfQuestion.where(:category_name => params[:search_words])
+      @title_of_test = CategoryOfQuestion.where(:category_name => params[:search_words]).first
+      redirect_to :action => :take_test, :id => @title_of_test.id
+    else
+      redirect_to :controller => 'question', :action => 'index'
+    end
   end
 
   def take_test
