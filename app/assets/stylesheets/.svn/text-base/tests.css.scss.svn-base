@@ -1,3 +1,180 @@
+@import 'common.css.scss';
+
+/* tests */
+.srch-box {
+  @include radius();
+  background: #fcfcfc;
+  border: 1px solid #e5e5e5;
+}
+.take-test-box {
+  padding: 20px;
+
+  h2 {
+    font-family: $cantarell;
+    font-size: 30px;
+    margin: 0 0 20px;
+  }
+
+  p {
+    margin: 0 0 20px;
+  }
+}
+.category-info-box {
+  font-family: $cantarell;
+  margin: 0 0 20px 0;
+}
+.questioner-box {
+  display: none;
+
+  .img {
+    float: left;
+    margin: 0 5px 5px 0;
+  }
+
+  .info {
+    color: #888;
+  }
+
+}
+.question-box {
+  @include radius();
+  @include gradient($startColor: #f8f8f8, $endColor: #fff);
+  @include boxShadowInset();
+  border: 1px solid #d5d5d5;
+  margin: 0 0 10px 0;
+  padding: 40px;
+
+  p {
+    font-size: 24px;
+  }
+}
+.question-textarea {
+  @include radius();
+  @include gradient($startColor: #f8f8f8, $endColor: #fff);
+  @include boxShadowInset();
+  border: 1px solid #d5d5d5;
+  font-size: 18px;
+  height: 150px;
+  margin: 0 0 10px 0;
+  padding: 20px;
+}
+.progress {
+  @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+  height: 40px !important;
+  border: 1px solid #d5d5d5;
+  margin: 0 0 40px;
+
+  .bar {
+    height: 40px !important;
+  }
+}
+.result-box {
+  display: none;
+  height: 40px;
+  margin-bottom: 42px;
+
+  .box {
+    @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+    @include gradient($startColor: #f8f8f8, $endColor: #fff);
+    @include radius();
+    height: 28px;
+    padding: 10px 0 0 0;
+    text-align: center;
+  }
+
+  .title {
+    color: #888;
+    margin-right: 10px;
+  }
+
+  .title + span {
+    color: #555;
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .btn-box {
+    float: left;
+    margin-left: 30px;
+    width: 164px;
+    
+    .btn-large {
+      font-size: 20px;
+      height: 38px;
+      padding: 0;
+      width: 164px;
+    }
+  }
+}
+.answer-box {
+
+  a, input[type="text"] {
+    @include boxShadowInset($blur: 3px, $color: rgba(0, 0, 0, .2));
+    @include gradient($startColor: #f8f8f8, $endColor: #fff);
+    @include radius();
+    border: 1px solid #d5d5d5;
+    color: #555;
+    display: block;
+    font-size: 18px;
+    margin: 0 0 10px 0;
+    padding: 20px;
+    text-align: center;
+  }
+
+  a:hover {
+    @include boxShadowInset($color: rgba(0, 0, 0, 0));
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, .1));
+    @include gradient($startColor: #e3eef5, $endColor: #e3eef5);
+    border: 1px solid #b8c8d2;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .right-answer, .right-answer:hover {
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, 0));
+    @include gradient($startColor: #4ad63e, $endColor: #36c42a);
+    color: #fff;
+    font-weight: bold;
+  }
+
+  .no-right-answer, .no-right-answer:hover {
+    @include boxShadow($vShadow: 0, $color: rgba(0, 0, 0, 0));
+    @include gradient($startColor: #de4646, $endColor: #cd3535);
+    color: #fff;
+    font-weight: bold;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .hide_box{
   margin: 10px;
   position: absolute;

@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 29
-/repos/atk/!svn/ver/248/trunk
+/repos/atk/!svn/ver/260/trunk
 END
 Gemfile.lock
 K 25
@@ -31,7 +31,7 @@ Gemfile
 K 25
 svn:wc:ra_dav:version-url
 V 37
-/repos/atk/!svn/ver/207/trunk/Gemfile
+/repos/atk/!svn/ver/268/trunk/Gemfile
 END
 config.ru
 K 25

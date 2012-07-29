@@ -5,7 +5,11 @@
       <p>４択で問題を作ってください。</p>
       <%= f.hidden_field :category_of_question_id, :value => @category_of_question.id %>
       <p class="title">問題</p>
+<<<<<<< .mine
       <textarea id="question" cols="20" name="question[question]" rows="20" placeholder="問題を入力してください。" class="span8 question-textarea"></textarea>
+=======
+      <textarea cols="20" name="question[question]" rows="20" placeholder="問題を入力してください" class="span8 question-textarea"></textarea>
+>>>>>>> .r260
       <div class="answer-box">
         <p class="title">正解</p>
         <input id="question_correct_answer" name="question[correct_answer]" size="30" type="text" placeholder="正解を入力してください" class="span8">

@@ -1,7 +1,7 @@
 10
 
 dir
-248
+260
 http://192.168.1.205/repos/atk/trunk/app/views/sessions
 http://192.168.1.205/repos/atk
 
@@ -25,4 +25,38 @@ suenaga
 
 
 b7584831-a532-46ce-b807-722f8a380bd8
+
+login_request.html.erb
+file
+270
+
+
+
+2012-07-28T08:00:15.000000Z
+7c7baeba8c9bccd6e849c2858f4ec4c9
+2012-07-29T13:14:27.181087Z
+270
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+422
 

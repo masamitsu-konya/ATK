@@ -1,0 +1,20 @@
+@import 'common.css.scss';
+
+.auth {
+  @include radius($radius: 90px);
+  border: 5px solid #fff;
+  display: block;
+  height: 160px;
+}
+.auth:hover {
+  @include opacity();
+}
+.facebook {
+  background: #3b5997 url(/assets/auth.png) no-repeat 54px 27px;
+}
+.twitter {
+  background: #3f98cf url(/assets/auth.png) no-repeat -159px 27px;
+}
+.github {
+  background: #cacaca url(/assets/auth.png) no-repeat -345px 31px;
+}

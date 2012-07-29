@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/repos/atk/!svn/ver/246/trunk/app/models
+/repos/atk/!svn/ver/254/trunk/app/models
 END
 user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/repos/atk/!svn/ver/215/trunk/app/models/user.rb
+/repos/atk/!svn/ver/253/trunk/app/models/user.rb
 END
 answer.rb
 K 25
@@ -37,7 +37,7 @@ question.rb
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/185/trunk/app/models/question.rb
+/repos/atk/!svn/ver/254/trunk/app/models/question.rb
 END
 category_of_question.rb
 K 25

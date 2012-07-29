@@ -7,7 +7,8 @@
         <li <%= 'class=active' if controller_name == 'tests' %>><%= link_to "Tests", :controller => :tests, :action => :index %></li>
         <li <%= 'class=active' if controller_name == 'questions' %>><%= link_to "Create", :controller => :questions, :action => :new %></li>
         <li <%= 'class=active' if controller_name == 'ranking' %>><%= link_to "Ranking", :controller => :ranking, :action => :index %></li>
-        <% if @user.uid == User::MORIYAMA || @user.uid == User::KONYA || @user.uid == User::AONO %>
+        <li <%= 'class=active' if controller_name == 'more' %>><%= link_to "More", "" %></li>
+        <% if @user.id == User::MORIYAMA || @user.id == User::KONYA || @user.id == User::AONO %>
           <li <%= 'class=active' if controller_name == 'admin' %>><%= link_to "UI page", :controller => :admin, :action => :index %></li>
         <% end %>
       </ul>

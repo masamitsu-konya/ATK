@@ -1,20 +1,31 @@
-<h1><%=link_to 'UI認証ページ',:action=> :index%> /カテゴリー編集</h1>
+<div class="row">
+  <div class="span12">
+    <ul class="nav nav-pills">
+      <li>
+       <%= link_to '問題認証・編集',:action=> :index %>
+      </li>
+      <li class="active">
+        <a href="#">カテゴリー編集</a>
+      </li>
+    </ul>
 
-<table class="table" style="width:700px;">
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>カテゴリー</th>
-      <th>編集</th>
-    <tr>
-  </thead>
-  <tbody>
-<% @categories.each do |category| %>
-    <tr>
-      <td><%= category.id %></td>
-      <td><%=category.category_name %></td>
-      <td><%=link_to '編集', :action=> :edit_category, :id =>category.id %></td>
-    </tr>
-<% end %>
-  </tbody>
-<table>
+    <table class="table table-bordered table-striped">
+      <thead>
+        <tr>
+          <th class="span1">ID</th>
+          <th class="span3">カテゴリー</th>
+          <th class="span8">編集</th>
+        <tr>
+      </thead>
+      <tbody>
+        <% @categories.each do |category| %>
+          <tr>
+            <td><%= category.id %></td>
+            <td><%=category.category_name %></td>
+            <td><%=link_to '編集', :action=> :edit_category, :id =>category.id %></td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+  </div>
+</div>

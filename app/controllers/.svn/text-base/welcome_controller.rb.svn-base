@@ -1,5 +1,5 @@
 class WelcomeController < ApplicationController
- # before_filter :login_required?
+ before_filter :login_check
 
   def index
     if session[:user_id].blank?
@@ -13,8 +13,6 @@ class WelcomeController < ApplicationController
       @user_proficient_skills = @user.scores.proficient
       @user_expert_skills = @user.scores.expert
       @user_master_skills = @user.scores.master
-      # 毎回更新
-      UserFriend.create_user_friends(@user)
     end
     @recommend_categories = CategoryOfQuestion.all
   end
@@ -23,13 +21,4 @@ class WelcomeController < ApplicationController
     @user = User.find(params[:id])
   end
   
-  def login
-
-  end
-
-  def login_required?
-    if session[:user_id].blank?
-      redirect_to :action=> "login"
-    end
-  end
 end

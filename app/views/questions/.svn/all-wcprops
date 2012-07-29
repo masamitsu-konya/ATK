@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/repos/atk/!svn/ver/248/trunk/app/views/questions
+/repos/atk/!svn/ver/251/trunk/app/views/questions
 END
 new.html.erb
 K 25
@@ -9,15 +9,9 @@ svn:wc:ra_dav:version-url
 V 62
 /repos/atk/!svn/ver/238/trunk/app/views/questions/new.html.erb
 END
-finish.html.erb
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/repos/atk/!svn/ver/71/trunk/app/views/questions/finish.html.erb
-END
 create.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/repos/atk/!svn/ver/248/trunk/app/views/questions/create.html.erb
+/repos/atk/!svn/ver/269/trunk/app/views/questions/create.html.erb
 END

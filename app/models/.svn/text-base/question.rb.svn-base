@@ -8,11 +8,9 @@ class Question < ActiveRecord::Base
    accepts_nested_attributes_for :user_question
 
    validates :category_of_question_id, :presence => true
-   validates :question, :presence => true
+   validates :question, :presence => true, :uniqueness => true
    validates :correct_answer, :presence => true
    validates :answer_1, :presence => true
-   validates :answer_2, :presence => true
-   validates :answer_3, :presence => true
 
    scope :public, where(:public => true)
 

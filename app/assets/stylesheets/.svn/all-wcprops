@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/248/trunk/app/assets/stylesheets
+/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets
 END
 scores.css.scss
 K 25
@@ -13,7 +13,7 @@ tests.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/repos/atk/!svn/ver/238/trunk/app/assets/stylesheets/tests.css.scss
+/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/tests.css.scss
 END
 carousel.css
 K 25
@@ -37,13 +37,19 @@ common.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/repos/atk/!svn/ver/248/trunk/app/assets/stylesheets/common.css.scss
+/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/common.css.scss
 END
 admin.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /repos/atk/!svn/ver/187/trunk/app/assets/stylesheets/admin.css.scss
+END
+login.css.scss
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/login.css.scss
 END
 application.css
 K 25
@@ -67,7 +73,7 @@ welcome.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/repos/atk/!svn/ver/229/trunk/app/assets/stylesheets/welcome.css.scss
+/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/welcome.css.scss
 END
 bootstrap_and_overrides.css.less
 K 25

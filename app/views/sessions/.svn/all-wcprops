@@ -3,3 +3,9 @@ svn:wc:ra_dav:version-url
 V 46
 /repos/atk/!svn/ver/4/trunk/app/views/sessions
 END
+login_request.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/atk/!svn/ver/270/trunk/app/views/sessions/login_request.html.erb
+END

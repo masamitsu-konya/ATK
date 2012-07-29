@@ -29,13 +29,3 @@ test:
   password:
   socket: /tmp/mysql.sock
 
-production:
-  adapter: mysql2
-  encoding: utf8
-  reconnect: true
-  host: 192.168.1.206
-  database: atk_pro
-  pool: 5
-  username: admin
-  password:
-  socket: /tmp/mysql.sock

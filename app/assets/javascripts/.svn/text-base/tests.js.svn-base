@@ -108,14 +108,14 @@ $(function(){
           $('.question_result').val(result);
           $('.count').val(question_total_count);
         }else{
-        $("#"+now_correct_answer).css({background: '#9ACD32'});
-        $('.progress').css({display: 'none'});
-        $('.bar').css({display: 'none'});
-        $('.result-box').css({display: 'block'});
-        $('.question_point').text(data['score']);
-        $('.sum_count').val(score+data['score']);
-        $('.test_sum_score').text(score+data['score']);
-        $('.hide-box').css({display: 'block'});
+          $("#"+now_correct_answer).css({background: '#9ACD32'});
+          $('.progress').css({display: 'none'});
+          $('.bar').css({display: 'none'});
+          $('.result-box').css({display: 'block'});
+          $('.question_point').text(data['score']);
+          $('.sum_count').val(score+data['score']);
+          $('.test_sum_score').text(score+data['score']);
+          $('.hide-box').css({display: 'block'});
         }
       }
     });

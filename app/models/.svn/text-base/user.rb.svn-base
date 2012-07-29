@@ -6,6 +6,10 @@ class User < ActiveRecord::Base
   has_many :questions, :through => :user_questions
   has_many :user_friends
   has_many :rankings
+
+  MORIYAMA = 100001901781582
+  AONO = 100002224998994
+  KONYA = 100000222194320
   
   def self.create_account(auth)
     p auth

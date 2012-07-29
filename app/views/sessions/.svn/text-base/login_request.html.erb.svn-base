@@ -1,0 +1,16 @@
+<div class="row">
+  <div class="span6 offset3">
+    <h2 class="mb20">SIGN IN</h2>
+    <div class="row">
+      <div class="span2">
+        <a class="auth facebook" href="/auth/facebook"></a>
+      </div>
+      <div class="span2">
+        <a class="auth twitter" href="/auth/twitter"></a>
+      </div>
+      <div class="span2">
+        <a class="auth github" href="/auth/github"></a>
+      </div>
+    </div>
+  </div>
+</div>
