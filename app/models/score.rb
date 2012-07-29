@@ -1,7 +1,9 @@
 class Score < ActiveRecord::Base
+  attr_accessible :rd, :score
+  act_as_paranoid
+
   belongs_to :user
   belongs_to :category_of_question
-  attr_accessible :rd, :score
 
   validates :user_id, :uniqueness=>{:scope => :category_of_question_id}, :presence => true
   validates :category_of_question_id, :presence=>true

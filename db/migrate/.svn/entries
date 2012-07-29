@@ -26,16 +26,16 @@ igpuser
 
 b7584831-a532-46ce-b807-722f8a380bd8
 
-20120709141807_create_answers.rb
+20120724131043_create_question_ratings.rb
 file
 
 
 
 
-2012-07-10T13:24:08.000000Z
-12c72d3242840ce565d7a83add859b23
-2012-07-09T15:50:44.929793Z
-107
+2012-07-24T16:02:20.000000Z
+eb0d6ca8df7ceb753e540e48e8130fe6
+2012-07-24T13:43:02.957516Z
+246
 igpuser
 
 
@@ -58,7 +58,7 @@ igpuser
 
 
 
-279
+262
 
 20120709154707_add_nursery_to_users.rb
 file
@@ -94,16 +94,16 @@ igpuser
 
 115
 
-20120724131043_create_question_ratings.rb
+20120709141807_create_answers.rb
 file
 
 
 
 
-2012-07-24T16:02:20.000000Z
-eb0d6ca8df7ceb753e540e48e8130fe6
-2012-07-24T13:43:02.957516Z
-246
+2012-07-10T13:24:08.000000Z
+12c72d3242840ce565d7a83add859b23
+2012-07-09T15:50:44.929793Z
+107
 igpuser
 
 
@@ -126,7 +126,75 @@ igpuser
 
 
 
-262
+279
+
+20120729135133_add_column_deleted_at_to_score.rb
+file
+273
+
+
+
+2012-07-29T13:55:30.000000Z
+6ee108cbf826323571a441c5492b4b42
+2012-07-29T13:59:41.141896Z
+273
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+128
+
+20120729134024_add_column_deleted_at_to_user.rb
+file
+274
+
+
+
+2012-07-29T13:42:47.000000Z
+f6de63dc79d882e13a0c84ad1def15a2
+2012-07-29T13:59:51.775215Z
+274
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+126
 
 20120611132724_create_users.rb
 file
@@ -196,16 +264,16 @@ igpuser
 
 313
 
-20120614152210_create_user_questions.rb
+20120729135059_add_column_deleted_at_to_question.rb
 file
+275
 
 
 
-
-2012-06-19T10:54:04.000000Z
-ef6be982770e02b3045fdde75589f4b4
-2012-06-26T11:17:22.821314Z
-17
+2012-07-29T13:53:23.000000Z
+80f52cbd9b58b6c44ac30cf8bd16dd2a
+2012-07-29T14:00:01.926444Z
+275
 igpuser
 
 
@@ -228,7 +296,7 @@ igpuser
 
 
 
-196
+134
 
 20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
 file
@@ -264,40 +332,6 @@ igpuser
 
 291
 
-20120614151847_create_category_of_questions.rb
-file
-
-
-
-
-2012-07-19T14:43:08.000000Z
-ac4e38ef9ef0c32a4a0cec3349d2a09d
-2012-07-19T16:55:20.695656Z
-206
-igpuser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-220
-
 20120717152917_create_user_friends.rb
 file
 
@@ -331,6 +365,108 @@ igpuser
 
 
 231
+
+20120729135154_add_column_deleted_at_to_category_of_question.rb
+file
+276
+
+
+
+2012-07-29T13:57:54.000000Z
+21d44cbcf95f15def35f8c91c7c24318
+2012-07-29T14:00:12.253649Z
+276
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+156
+
+20120614152210_create_user_questions.rb
+file
+
+
+
+
+2012-06-19T10:54:04.000000Z
+ef6be982770e02b3045fdde75589f4b4
+2012-06-26T11:17:22.821314Z
+17
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+196
+
+20120614151847_create_category_of_questions.rb
+file
+
+
+
+
+2012-07-19T14:43:08.000000Z
+ac4e38ef9ef0c32a4a0cec3349d2a09d
+2012-07-19T16:55:20.695656Z
+206
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+220
 
 20120719154109_create_rankings.rb
 file

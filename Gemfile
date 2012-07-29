@@ -6,6 +6,7 @@ gem 'rails', '3.2.6'
 gem 'rake', '0.9.2.2'
 gem 'jquery-rails', '>= 0.2.6'
 gem 'rmagick', :require => 'RMagick'
+gem 'rails3_acts_as_paranoid'
 
 group :development, :test do
   if RUBY_VERSION =~ /1.9/

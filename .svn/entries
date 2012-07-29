@@ -187,12 +187,6 @@ http://192.168.1.205/repos/atk/trunk/tmp
 script
 dir
 
-doc
-dir
-
-config
-dir
-
 .gitignore
 file
 
@@ -227,19 +221,25 @@ suenaga
 
 430
 
+config
+dir
+
+doc
+dir
+
 lib
 dir
 
 Gemfile
 file
-268
+272
 
 
 
-2012-07-27T14:00:52.000000Z
-b1aa2cc91ef0b00659937d22de8a358c
-2012-07-29T13:11:46.608531Z
-268
+2012-07-29T13:47:22.000000Z
+bdcde07b31237d4a028ca0a48a55a876
+2012-07-29T13:59:25.977128Z
+272
 igpuser
 
 
@@ -262,7 +262,7 @@ igpuser
 
 
 
-668
+698
 
 public
 dir
