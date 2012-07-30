@@ -80,8 +80,8 @@
     <div class="user-info mb40">
       <img src=<%=current_user.image_url %> width="50" height="50" alt="" /><br />
       <span class="name"><%= current_user.last_name || current_user.nickname %>&nbsp;<%= current_user.first_name %></span><br />
-      <%= current_user.company %><br />
-      <%= current_user.location %><br />
+      <%= current_user.company if current_user.company %><br />
+      <%= current_user.location if current_user.location %><br />
       <%= link_to 'Setting', :action => "profile", :id => current_user.id %>
     </div>
     <div class="mb40">
