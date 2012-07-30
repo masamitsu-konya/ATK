@@ -1,4 +1,4 @@
-
+# coding: utf-8
 class QuestionsController < ApplicationController
   before_filter :login_check  
   def new
