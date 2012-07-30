@@ -1,6 +1,6 @@
 <div id="create_question_row" class="row">
   <div class="span8">
-    <%= form_for (@question), :url=>{:action => 'finish'}, :remote => true do |f| %>
+    <%= form_for (@question), :url=>{:action => 'finish'} do |f| %>
       <h1>問題作成</h1>
       <p>４択で問題を作ってください。</p>
       <%= f.hidden_field :category_of_question_id, :value => @category_of_question.id %>
@@ -16,6 +16,10 @@
         <%= f.fields_for :user_question, @question.user_question || UserQuestion.new do |f2| %>
           <%= f2.hidden_field :user_id, :value => current_user.id %>
         <% end %>
+        <%= f.fields_for :question_rating, @question.question_rating || QuestionRating.new do |f3| %>
+          <%= f3.hidden_field :rating, :value => 1500 %>
+          <%= f3.hidden_field :rd, :value => 350 %>
+        <% end %>
       </div>
       <div class="row">
         <button id="create_submit" type="submit" class="btn btn-large btn-warning span2">作成する</button>
@@ -25,7 +29,7 @@
 
   <div class="span3 offset1">
     <p><%= @category_of_question.category_name %></p>
-    <%= image_tag @category_of_question.category_image.url %> 
+    <%= image_tag @category_of_question.category_image.url if @category_of_question.category_image%> 
     <hr>
     <h3>Your <%= @category_of_question.category_name %> Questions</h3>
     <h3>FAQs: Adding Test Questions</h3>
