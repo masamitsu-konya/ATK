@@ -1,12 +1,13 @@
-
 # -*- coding:utf-8 -*-
-module ActionController
-  class Request
-    private
-      def normalize_parameters_with_force_encoding(value)
-        (_value = normalize_parameters_without_force_encoding(value)).respond_to?(:force_encoding) ? 
-          _value.force_encoding(Encoding::UTF_8) : _value
-       end
-       alias_method_chain :normalize_parameters, :force_encoding
-   end
+module ActiveSupport
+  class SafeBuffer < String
+    def concat(value)
+      if value.html_safe?
+        super(value.force_encoding('utf-8'))
+      else
+        super(ERB::Util.h(value.force_encoding('utf-8')))
+      end
+    end
+    alias << concat
+  end
 end
