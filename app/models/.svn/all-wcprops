@@ -7,7 +7,7 @@ user.rb
 K 25
 svn:wc:ra_dav:version-url
 V 48
-/repos/atk/!svn/ver/253/trunk/app/models/user.rb
+/repos/atk/!svn/ver/277/trunk/app/models/user.rb
 END
 answer.rb
 K 25
@@ -24,8 +24,8 @@ END
 user_question.rb
 K 25
 svn:wc:ra_dav:version-url
-V 56
-/repos/atk/!svn/ver/32/trunk/app/models/user_question.rb
+V 57
+/repos/atk/!svn/ver/282/trunk/app/models/user_question.rb
 END
 user_friend.rb
 K 25
@@ -37,13 +37,13 @@ question.rb
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/254/trunk/app/models/question.rb
+/repos/atk/!svn/ver/279/trunk/app/models/question.rb
 END
 category_of_question.rb
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/repos/atk/!svn/ver/193/trunk/app/models/category_of_question.rb
+/repos/atk/!svn/ver/280/trunk/app/models/category_of_question.rb
 END
 ranking.rb
 K 25
@@ -55,7 +55,7 @@ score.rb
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/repos/atk/!svn/ver/244/trunk/app/models/score.rb
+/repos/atk/!svn/ver/281/trunk/app/models/score.rb
 END
 question_rating.rb
 K 25

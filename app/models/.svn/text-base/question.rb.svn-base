@@ -1,6 +1,7 @@
 class Question < ActiveRecord::Base
    attr_accessible :category_of_question_id, :question, :correct_answer, :answer_1, :answer_2, :answer_3, :user_question_attributes
-   
+   act_as_paranoid
+
    has_one :user_question
    belongs_to :user
    belongs_to :category_of_question

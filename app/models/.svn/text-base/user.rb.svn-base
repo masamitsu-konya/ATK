@@ -1,4 +1,5 @@
 class User < ActiveRecord::Base
+  acts_as_paranoid
   attr_accessible :email, :image_url, :nickname
 
   has_many :user_questions
