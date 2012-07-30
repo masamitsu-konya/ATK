@@ -1,12 +1,13 @@
 class Question < ActiveRecord::Base
-   attr_accessible :category_of_question_id, :question, :correct_answer, :answer_1, :answer_2, :answer_3, :user_question_attributes
+   attr_accessible :category_of_question_id, :question, :correct_answer, :answer_1, :answer_2, :answer_3, :user_question_attributes, :question_rating_attributes
    acts_as_paranoid
 
    has_one :user_question
+   has_one :question_rating
    belongs_to :user
    belongs_to :category_of_question
 
-   accepts_nested_attributes_for :user_question
+   accepts_nested_attributes_for :user_question, :question_rating 
 
    validates :category_of_question_id, :presence => true
    validates :question, :presence => true, :uniqueness => true
