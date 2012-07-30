@@ -1,5 +1,4 @@
 # coding: utf-8
-# coding: utf-8
 class AdminController < ApplicationController  
   before_filter :login_check
   
