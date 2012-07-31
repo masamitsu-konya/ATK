@@ -1,3 +1,4 @@
+# coding: utf-8
 class RankingController < ApplicationController
   def index
     if @user.scores.present? 

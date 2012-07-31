@@ -1,14 +1,14 @@
 10
 
 dir
-260
+330
 http://192.168.1.205/repos/atk/trunk/app/views/questions
 http://192.168.1.205/repos/atk
 
 
 
-2012-07-27T15:21:36.789099Z
-251
+2012-07-31T13:56:07.001482Z
+327
 igpuser
 
 
@@ -60,40 +60,16 @@ igpuser
 
 696
 
-finish.html.erb
-file
-271
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-deleted
-
 create.html.erb
 file
-269
 
 
 
-2012-07-29T13:12:43.000000Z
-1ddc38cfa8a3b4eda3136833a5902ccc
-2012-07-29T13:13:31.004013Z
-269
+
+2012-07-31T13:53:57.000000Z
+e034c9caf22a6a8c7de2e4dceb9f527d
+2012-07-31T13:56:07.001482Z
+327
 igpuser
 
 
@@ -116,5 +92,5 @@ igpuser
 
 
 
-1904
+1867
 

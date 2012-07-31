@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 49
-/repos/atk/!svn/ver/208/trunk/config/initializers
+/repos/atk/!svn/ver/296/trunk/config/initializers
 END
 inflections.rb
 K 25
@@ -18,8 +18,8 @@ END
 omniauth.rb
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/repos/atk/!svn/ver/85/trunk/config/initializers/omniauth.rb
+V 61
+/repos/atk/!svn/ver/296/trunk/config/initializers/omniauth.rb
 END
 secret_token.rb
 K 25

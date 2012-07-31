@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 29
-/repos/atk/!svn/ver/260/trunk
+/repos/atk/!svn/ver/330/trunk
 END
 Gemfile.lock
 K 25
 svn:wc:ra_dav:version-url
 V 42
-/repos/atk/!svn/ver/226/trunk/Gemfile.lock
+/repos/atk/!svn/ver/318/trunk/Gemfile.lock
 END
 Rakefile
 K 25

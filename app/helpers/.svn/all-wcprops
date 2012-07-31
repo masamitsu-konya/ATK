@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 41
-/repos/atk/!svn/ver/236/trunk/app/helpers
+/repos/atk/!svn/ver/306/trunk/app/helpers
 END
 scores_helper.rb
 K 25
@@ -18,8 +18,8 @@ END
 application_helper.rb
 K 25
 svn:wc:ra_dav:version-url
-V 61
-/repos/atk/!svn/ver/3/trunk/app/helpers/application_helper.rb
+V 63
+/repos/atk/!svn/ver/306/trunk/app/helpers/application_helper.rb
 END
 sessions_helper.rb
 K 25

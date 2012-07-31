@@ -1,19 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/repos/atk/!svn/ver/246/trunk/db/migrate
-END
-20120724131043_create_question_ratings.rb
-K 25
-svn:wc:ra_dav:version-url
-V 82
-/repos/atk/!svn/ver/246/trunk/db/migrate/20120724131043_create_question_ratings.rb
-END
-20120709154707_add_nursery_to_users.rb
-K 25
-svn:wc:ra_dav:version-url
-V 79
-/repos/atk/!svn/ver/107/trunk/db/migrate/20120709154707_add_nursery_to_users.rb
+/repos/atk/!svn/ver/276/trunk/db/migrate
 END
 20120709141807_create_answers.rb
 K 25
@@ -21,17 +9,23 @@ svn:wc:ra_dav:version-url
 V 73
 /repos/atk/!svn/ver/107/trunk/db/migrate/20120709141807_create_answers.rb
 END
+20120709154707_add_nursery_to_users.rb
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/atk/!svn/ver/107/trunk/db/migrate/20120709154707_add_nursery_to_users.rb
+END
+20120724131043_create_question_ratings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/atk/!svn/ver/246/trunk/db/migrate/20120724131043_create_question_ratings.rb
+END
 20120729135133_add_column_deleted_at_to_score.rb
 K 25
 svn:wc:ra_dav:version-url
 V 89
 /repos/atk/!svn/ver/273/trunk/db/migrate/20120729135133_add_column_deleted_at_to_score.rb
-END
-20120729134024_add_column_deleted_at_to_user.rb
-K 25
-svn:wc:ra_dav:version-url
-V 88
-/repos/atk/!svn/ver/274/trunk/db/migrate/20120729134024_add_column_deleted_at_to_user.rb
 END
 20120611132724_create_users.rb
 K 25
@@ -39,23 +33,29 @@ svn:wc:ra_dav:version-url
 V 70
 /repos/atk/!svn/ver/82/trunk/db/migrate/20120611132724_create_users.rb
 END
+20120729134024_add_column_deleted_at_to_user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/repos/atk/!svn/ver/274/trunk/db/migrate/20120729134024_add_column_deleted_at_to_user.rb
+END
 20120724125136_create_scores.rb
 K 25
 svn:wc:ra_dav:version-url
 V 72
 /repos/atk/!svn/ver/243/trunk/db/migrate/20120724125136_create_scores.rb
 END
-20120729135059_add_column_deleted_at_to_question.rb
-K 25
-svn:wc:ra_dav:version-url
-V 92
-/repos/atk/!svn/ver/275/trunk/db/migrate/20120729135059_add_column_deleted_at_to_question.rb
-END
 20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
 K 25
 svn:wc:ra_dav:version-url
 V 110
 /repos/atk/!svn/ver/182/trunk/db/migrate/20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
+END
+20120729135059_add_column_deleted_at_to_question.rb
+K 25
+svn:wc:ra_dav:version-url
+V 92
+/repos/atk/!svn/ver/275/trunk/db/migrate/20120729135059_add_column_deleted_at_to_question.rb
 END
 20120717152917_create_user_friends.rb
 K 25

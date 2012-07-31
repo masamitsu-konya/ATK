@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120724131043) do
+ActiveRecord::Schema.define(:version => 20120729135154) do
 
   create_table "answers", :force => true do |t|
     t.integer  "user_id"
@@ -29,6 +29,7 @@ ActiveRecord::Schema.define(:version => 20120724131043) do
     t.string   "category_image_uid"
     t.datetime "created_at",         :null => false
     t.datetime "updated_at",         :null => false
+    t.datetime "deleted_at"
   end
 
   create_table "picture_of_categories", :force => true do |t|
@@ -62,6 +63,7 @@ ActiveRecord::Schema.define(:version => 20120724131043) do
     t.boolean  "public",                  :default => false
     t.integer  "score"
     t.integer  "time"
+    t.datetime "deleted_at"
   end
 
   create_table "rankings", :force => true do |t|
@@ -79,10 +81,17 @@ ActiveRecord::Schema.define(:version => 20120724131043) do
     t.integer  "category_of_question_id"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
+    t.datetime "deleted_at"
   end
 
   add_index "scores", ["category_of_question_id"], :name => "index_scores_on_category_of_question_id"
   add_index "scores", ["user_id"], :name => "index_scores_on_user_id"
+
+  create_table "tests", :force => true do |t|
+    t.datetime "deleted_at"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
 
   create_table "user_friends", :force => true do |t|
     t.integer  "user_id"
@@ -118,6 +127,7 @@ ActiveRecord::Schema.define(:version => 20120724131043) do
     t.datetime "created_at",                       :null => false
     t.datetime "updated_at",                       :null => false
     t.integer  "nursery"
+    t.datetime "deleted_at"
   end
 
 end

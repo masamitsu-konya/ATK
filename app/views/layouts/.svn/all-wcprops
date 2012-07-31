@@ -1,13 +1,13 @@
 K 25
 svn:wc:ra_dav:version-url
 V 47
-/repos/atk/!svn/ver/251/trunk/app/views/layouts
+/repos/atk/!svn/ver/292/trunk/app/views/layouts
 END
 _header.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/repos/atk/!svn/ver/261/trunk/app/views/layouts/_header.html.erb
+/repos/atk/!svn/ver/292/trunk/app/views/layouts/_header.html.erb
 END
 _carousel.html.erb
 K 25

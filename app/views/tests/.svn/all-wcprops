@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/repos/atk/!svn/ver/245/trunk/app/views/tests
+/repos/atk/!svn/ver/330/trunk/app/views/tests
 END
 index.html.erb
 K 25
@@ -13,13 +13,13 @@ test_practice.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/repos/atk/!svn/ver/245/trunk/app/views/tests/test_practice.html.erb
+/repos/atk/!svn/ver/323/trunk/app/views/tests/test_practice.html.erb
 END
 test.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 59
-/repos/atk/!svn/ver/239/trunk/app/views/tests/test.html.erb
+/repos/atk/!svn/ver/330/trunk/app/views/tests/test.html.erb
 END
 take_test.html.erb
 K 25

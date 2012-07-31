@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets
+/repos/atk/!svn/ver/305/trunk/app/assets/stylesheets
 END
 scores.css.scss
 K 25
@@ -37,7 +37,7 @@ common.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/common.css.scss
+/repos/atk/!svn/ver/305/trunk/app/assets/stylesheets/common.css.scss
 END
 admin.css.scss
 K 25

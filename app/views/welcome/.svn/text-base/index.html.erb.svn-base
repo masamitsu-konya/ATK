@@ -80,15 +80,14 @@
     <div class="user-info mb40">
       <img src=<%=current_user.image_url %> width="50" height="50" alt="" /><br />
       <span class="name"><%= current_user.last_name || current_user.nickname %>&nbsp;<%= current_user.first_name %></span><br />
-      <%= current_user.company %><br />
-      <%= current_user.location %><br />
+      <%= current_user.company if current_user.company %><br />
+      <%= current_user.location if current_user.location %><br />
       <%= link_to 'Setting', :action => "profile", :id => current_user.id %>
     </div>
     <div class="mb40">
       <h3>あなたが出題した問題</h3>
       <% @user_questions_categories.each do |user_questions_category| %>
-        問題数： <%= @user.questions.where(:category_of_question_id => user_questions_category.id).count %>個<br />
-        カテゴリー： <%=link_to user_questions_category.category_name, :controller =>'tests', :action =>'take_test',:id => user_questions_category.id  %> 
+        カテゴリー： <%=link_to user_questions_category.category_name, :controller =>'tests', :action =>'take_test',:id => user_questions_category.id  %>&nbsp;<%= @user.questions.where(:category_of_question_id => user_questions_category.id).count %>問<br /> 
       <% end %>
     </div>
     <h4>スキルレベル</h4>

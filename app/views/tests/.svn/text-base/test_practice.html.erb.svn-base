@@ -1,13 +1,13 @@
 <div class="row">
-  
+
   <div class="span2">
     <h1 class="category-info-box">
-      <%= image_tag @test.category_of_question.category_image.url %>   
-      <%= @test.category_of_question.category_name %>
+      <%= image_tag @sample_question.category_of_question.category_image.url %>
+      <%= @sample_question.category_of_question.category_name %>
     </h1>
     <div class="hide_box"></div>
   </div>
-  
+
   <div class="span8">
 
     <div class="question-box">
@@ -17,7 +17,7 @@
     <div class="progress progress-striped active">
       <div class="bar" style="width 100%;"></div>
     </div>
-    
+
     <div class="result-box row">
       <div class="span2 box">
         <span class="title">問題ランク</span>
@@ -33,15 +33,16 @@
       </div>
       <div class="btn-box">
         <%= form_tag :action => "test" do %>
-          <input type="hidden" class="category_of_question_id" name="category_of_question_id" value="<%=@test.category_of_question_id%>">
-          <input type="hidden" class="question_id" name="question_id" value="<%= @test.id%>">
+          <input type="hidden" class="category_of_question_id" name="category_of_question_id" value="<%= @sample_question.category_of_question_id %>">
+          <input type="hidden" class="question_id" name="question_id" value="<%= @sample_question.id %>">
           <input type="hidden" class="question_result" name="question_result">
-          <input type="hidden" class="sum_count" name="sum_count" value="0">
+          <input type="hidden" class="question_count" name="question_count">
+          <input type="hidden" class="user_id" name="user_id">
           <input id="next_question" type="submit" class="btn btn-large btn-primary" value="本番へ" onClick="location.href='/tests/test'">
         <% end %>
       </div>
     </div>
- 
+
     <div class="answer-box">
       <a href="javascript:void(0)" id="answer1"></a>
       <a href="javascript:void(0)" id="answer2"></a>
@@ -54,12 +55,12 @@
 </div>
 
 <script>
-  var answer = new Array(<%= raw @test.correct_answer.to_json%>, <%= raw @test.answer_1.to_json%>, <%= raw @test.answer_2.to_json%>, <%= raw @test.answer_3.to_json%> );
-  var question = <%= raw @test.question.to_json %>;
-  var question_id = <%= raw @test.id.to_s.to_json %>
-  var correct_answer = <%= raw @test.correct_answer.to_json %>;
-  var user_id = <%= raw current_user.to_json %>
-  var category_id = <%= raw @test.category_of_question_id.to_s.to_json %>;
-  var question_count = <%= raw @count.to_s.to_json %>;
+  var answer = new Array(<%= raw @sample_question.correct_answer.to_json %>, <%= raw @sample_question.answer_1.to_json %>, <%= raw @sample_question.answer_2.to_json %>, <%= raw @sample_question.answer_3.to_json %>);
+  var question = <%= raw @sample_question.question.to_json %>;
+  var question_id = <%= @sample_question.id %>;
+  var correct_answer = <%= raw @sample_question.correct_answer.to_json %>;
+  var user_id = <%= current_user.id %>;
+  var category_id = <%= @sample_question.category_of_question_id %>;
+  var question_count = <%= @question_count %>;
   var score_s = 0;
 </script>

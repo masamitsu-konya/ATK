@@ -1,30 +1,24 @@
 <div id="create_question_row" class="row">
   <div class="span8">
-    <%= form_for (@question), :url=>{:action => 'finish'} do |f| %>
-      <h1>問題作成</h1>
-      <p>４択で問題を作ってください。</p>
-      <%= f.hidden_field :category_of_question_id, :value => @category_of_question.id %>
-      <p class="title">問題</p>
-      <textarea id="question" cols="20" name="question[question]" rows="20" placeholder="問題を入力してください。" class="span8 question-textarea"></textarea>
-      <div class="answer-box">
-        <p class="title">正解</p>
-        <input id="question_correct_answer" name="question[correct_answer]" size="30" type="text" placeholder="正解を入力してください" class="span8">
-        <p class="title">間違い</p>
-        <input id="question_answer_1" name="question[answer_1]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
-        <input id="question_answer_2" name="question[answer_2]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
-        <input id="question_answer_3" name="question[answer_3]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
-        <%= f.fields_for :user_question, @question.user_question || UserQuestion.new do |f2| %>
-          <%= f2.hidden_field :user_id, :value => current_user.id %>
-        <% end %>
-        <%= f.fields_for :question_rating, @question.question_rating || QuestionRating.new do |f3| %>
-          <%= f3.hidden_field :rating, :value => 1500 %>
-          <%= f3.hidden_field :rd, :value => 350 %>
-        <% end %>
-      </div>
-      <div class="row">
-        <button id="create_submit" type="submit" class="btn btn-large btn-warning span2">作成する</button>
-      </div>
-    <% end %>
+    <h1>問題作成</h1>
+    <p>４択で問題を作ってください。</p>
+    <input id="category_of_question" type="hidden" value="<%=@category_of_question.id %>">
+    <p class="title">問題</p>
+    <textarea id="question" cols="20" name="question[question]" rows="20" placeholder="問題を入力してください。" class="span8 question-textarea"></textarea>
+    <div class="answer-box">
+      <p class="title">正解</p>
+      <input id="question_correct_answer" name="question[correct_answer]" size="30" type="text" placeholder="正解を入力してください" class="span8">
+      <p class="title">間違い</p>
+      <input id="question_answer_1" name="question[answer_1]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
+      <input id="question_answer_2" name="question[answer_2]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
+      <input id="question_answer_3" name="question[answer_3]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
+      <input type="hidden" id="user_id"  value="<%=current_user.id%>">
+      <input type="hidden" id="rating" value="<%= QuestionRating::INITIAL_RATING%>">
+      <input type="hidden" id="rd" value="<%= QuestionRating::INITIAL_RD %>">
+    </div>
+    <div class="row">
+      <button id="create_submit" type="submit" class="btn btn-large btn-warning span2">作成する</button>
+    </div>
   </div>
 
   <div class="span3 offset1">

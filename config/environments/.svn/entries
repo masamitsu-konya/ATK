@@ -1,15 +1,15 @@
 10
 
 dir
-260
+330
 http://192.168.1.205/repos/atk/trunk/config/environments
 http://192.168.1.205/repos/atk
 
 
 
-2012-06-11T03:16:30.132825Z
-2
-suenaga
+2012-07-29T13:11:38.361791Z
+267
+igpuser
 
 
 
@@ -96,7 +96,7 @@ suenaga
 
 production.rb
 file
-267
+
 
 
 

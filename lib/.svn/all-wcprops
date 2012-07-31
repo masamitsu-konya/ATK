@@ -1,5 +1,11 @@
 K 25
 svn:wc:ra_dav:version-url
-V 31
-/repos/atk/!svn/ver/2/trunk/lib
+V 33
+/repos/atk/!svn/ver/302/trunk/lib
+END
+encoding_patch.rb
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/atk/!svn/ver/302/trunk/lib/encoding_patch.rb
 END

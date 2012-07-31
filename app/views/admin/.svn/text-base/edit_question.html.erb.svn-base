@@ -1,21 +1,19 @@
 <div class="row">
   <div class="span8">
     <%= form_for (@question), :url=>{:action => 'finish', :id=>@question.id } do |f| %>
-      <h1>問題編集</h1>
-      <p>４択で問題を作ってください。</p>
       <%= f.hidden_field :category_of_question_id, :value => @category_of_question.id %>
-      <p class="title">問題</p>
-      <%=f.text_area :question , :class => "span8 question-textarea", :placeholder => '問題を入力してください' %>
+      <p class="title">correct</p>
+      <%=f.text_area :question , :class => "span8 question-textarea", :placeholder => 'plese write question' %>
       <div class="answer-box">
-        <p class="title">正解</p>
-        <%=f.text_field :correct_answer, :class => 'span8', :placeholder => '正解を入力してください' %>
-        <p class="title">間違い</p>
-        <%=f.text_field :answer_1 , :class => 'span8', :placeholder => '間違いを入力してください' %>
-        <%=f.text_field :answer_2 , :class => 'span8', :placeholder => '間違いを入力してください' %>
-        <%=f.text_field :answer_3 , :class => 'span8', :placeholder => '間違いを入力してください' %>
+        <p class="title">correct</p>
+        <%=f.text_field :correct_answer, :class => 'span8', :placeholder => 'plese write correct answer' %>
+        <p class="title">wrong</p>
+        <%=f.text_field :answer_1 , :class => 'span8', :placeholder => 'plese write wrong answer' %>
+        <%=f.text_field :answer_2 , :class => 'span8', :placeholder => 'plese write wrong answer' %>
+        <%=f.text_field :answer_3 , :class => 'span8', :placeholder => 'plese write wrong answer' %>
       </div>
       <div class="row">
-        <button type="submit" class="btn btn-large btn-warning span2">変更する</button>
+        <button type="submit" class="btn btn-large btn-warning span2">change</button>
       </div>
     <% end %>
   </div>

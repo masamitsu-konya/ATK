@@ -45,7 +45,7 @@ class QuestionRating < ActiveRecord::Base
 
     # パラメータ出力
     def print_question_parameter(score_0, question_rating, result)
-      result_params = result == "true" ? 0 : 1
+      result_params = result == true ? 0 : 1
       g = self.get_g(score_0.rd)
       e = self.get_e(g, question_rating.rating, score_0.score)
       d = self.get_d(g, e)
