@@ -22,7 +22,7 @@ Atk::Application.routes.draw do
 
   match '/questions/create/' => 'questions#create' 
   match '/questions/new/' => 'questions#new' 
-  match '/questions/finish/' => 'questions#finish'
+  match '/questions/finish_create' => 'questions#finish_create'
   match '/questions/upload' => 'questions#upload'
 
   match '/tests/index/' => 'tests#index'

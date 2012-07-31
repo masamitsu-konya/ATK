@@ -1,4 +1,61 @@
 class QuestionRating < ActiveRecord::Base
+  
+  validates :question_id, :presence => true
+  validates :rating, :presence => true
+  validates :rd, :presence => true
+  
   belongs_to :question
-  attr_accessible :rating, :rd
+  attr_accessible :rating, :rd, :question_id
+
+  INITIAL_RATING = 1500.0
+  INITIAL_RD = 350.0
+
+  def rating_initialize
+    self.rating = INITIAL_RATING
+    self.rd = INITIAL_RD
+  end
+
+  class << self
+  # RDの値計算
+    def get_rd(rd_0, d)
+      rd = Math::sqrt((1.to_f / (rd_0 ** 2) + 1.to_f / d) ** (-1))
+      rd = 350.0 if rd > 350.0
+      rd
+    end
+
+    # g(RD)の計算
+    def get_g(rd_user)
+      1.to_f / Math::sqrt(1 + 3 * (0.0057565 ** 2) * (rd_user ** 2).to_f / (Math::PI ** 2))
+    end
+
+    # Eの計算
+    def get_e(g, rating_question, score_user)
+      1.to_f / (1 + 10 ** ((-1) * g * (rating_question - score_user).to_f / 400))
+    end
+
+    # d^2の値計算
+    def get_d(g, e)
+      1.to_f / ((0.0057565 ** 2) * (g ** 2) * e * (1 - e))
+    end
+
+    # スコアの計算
+    def calculate_rating(rd, d, g, e, rating_question, result)
+      rating_question += 0.0057565 / (1.to_f / (rd ** 2) + 1.to_f / d) * g * (result - e)
+    end
+
+    # パラメータ出力
+    def print_question_parameter(score_0, question_rating, result)
+      result_params = result == true ? 0 : 1
+      g = self.get_g(score_0.rd)
+      e = self.get_e(g, question_rating.rating, score_0.score)
+      d = self.get_d(g, e)
+      rd = self.get_rd(question_rating.rd, d)
+      rating = self.calculate_rating(rd, d, g, e, question_rating.rating, result_params)
+
+      question_parameter = {
+        :rd_question => rd,
+        :rating_question => rating
+      }
+    end
+  end
 end
