@@ -1,13 +1,13 @@
+# -*- coding:utf-8 -*-
 module ActiveSupport
   class SafeBuffer < String
-    def normalize_parameters_with_force_encoding_to_utf8(value)
-      case value
-      when Hash, Array
+    def concat(value)
+      if value.html_safe?
+        super(value.force_encoding('utf-8'))
       else
-        value = value.force_encoding("UTF-8")
+        super(ERB::Util.h(value.force_encoding('utf-8')))
       end
-      normalize_parameters_without_force_encoding_to_utf8(value)
     end
-    alias_method_chain :normalize_parameters, :force_encoding_to_utf8
+    alias << concat
   end
 end
