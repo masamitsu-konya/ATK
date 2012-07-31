@@ -55,6 +55,7 @@
 </div>
 
 <script>
+  var answer = new Array(<%= raw @sample_question.correct_answer.to_json %>, <%= raw @sample_question.answer_1.to_json %>, <%= raw @sample_question.answer_2.to_json %>, <%= raw @sample_question.answer_3.to_json %>);
   var question = <%= raw @sample_question.question.to_json %>;
   var question_id = <%= @sample_question.id %>;
   var correct_answer = <%= raw @sample_question.correct_answer.to_json %>;
