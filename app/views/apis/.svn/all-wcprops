@@ -1,13 +1,19 @@
 K 25
 svn:wc:ra_dav:version-url
 V 44
-/repos/atk/!svn/ver/235/trunk/app/views/apis
+/repos/atk/!svn/ver/361/trunk/app/views/apis
 END
 top_recommend_category.html.erb
 K 25
 svn:wc:ra_dav:version-url
 V 76
 /repos/atk/!svn/ver/228/trunk/app/views/apis/top_recommend_category.html.erb
+END
+get_category.html.erb
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/atk/!svn/ver/361/trunk/app/views/apis/get_category.html.erb
 END
 past_test_category.html.erb
 K 25

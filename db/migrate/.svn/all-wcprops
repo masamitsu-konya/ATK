@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 40
-/repos/atk/!svn/ver/276/trunk/db/migrate
+/repos/atk/!svn/ver/350/trunk/db/migrate
 END
 20120709141807_create_answers.rb
 K 25
@@ -62,6 +62,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 78
 /repos/atk/!svn/ver/167/trunk/db/migrate/20120717152917_create_user_friends.rb
+END
+20120801123107_add_column_score_to_rankings.rb
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/atk/!svn/ver/350/trunk/db/migrate/20120801123107_add_column_score_to_rankings.rb
 END
 20120729135154_add_column_deleted_at_to_category_of_question.rb
 K 25

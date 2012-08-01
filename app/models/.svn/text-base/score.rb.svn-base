@@ -1,5 +1,5 @@
 class Score < ActiveRecord::Base
-  attr_accessible :rd, :score
+  attr_accessible :user_id, :category_of_question_id, :rd, :score
   acts_as_paranoid
 
   belongs_to :user
@@ -77,15 +77,17 @@ class Score < ActiveRecord::Base
       }
     end
 
-    def regist_user_score(user_id, category_id, sum_score)
-      if Score.where(:user_id => user_id, :category_of_question_id => category_id)
+    def regist_user_score(user_id, category_id, rd, sum_score)
+      if Score.where(:user_id => user_id, :category_of_question_id => category_id).present?
         @user_score = Score.where(:user_id => user_id, :category_of_question_id => category_id).last
-        @user_score.attributes={:score => sum_score}
+        @user_score.score = sum_score.to_i
+        @user_score.rd = rd
       else
         @user_score = Score.new
         @user_score.user_id = user_id
         @user_score.category_of_question_id = category_id
-        @user_score.score = sum_score
+        @user_score.score = sum_score.to_i
+        @user_score.rd = rd
       end
       @user_score.save
     end

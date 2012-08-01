@@ -63,16 +63,14 @@
       <a href="javascript:void(0)" id="answer2"></a>
       <a href="javascript:void(0)" id="answer3"></a>
       <a href="javascript:void(0)" id="answer4"></a>
+      <div class="hide-box">
+        <div class="label"></div>
+      </div>
     </div>
-
-    <div class="hide-box"></div>
 
   </div>
 
 </div>
-
-
-<div class="hide_box"></div>
 
 <script>
 var answer = new Array(<%= raw @question.correct_answer.to_json %>, <%= raw @question.answer_1.to_json %>, <%= raw @question.answer_2.to_json %>, <%= raw @question.answer_3.to_json %>);

@@ -8,9 +8,11 @@
           知ってる知識で問題を作って、同じスキルを持った人を助けよう！
         </p>
         <p class="mb5">カテゴリーの名前は？</p>
-        <input class="text span5" name="category_of_question[category_name]" size="30" type="text">
+        <input id="category_of_question_name" class="text span5" name="category_of_question[category_name]" size="30" type="text" autocomplete="off">
         <button type="submit" class="btn btn-warning">問題を作成する</button>
       <% end %>
+      <div id="category_name_box" class="well span5">
+      </div>
     </div>
   </div>
 </div>

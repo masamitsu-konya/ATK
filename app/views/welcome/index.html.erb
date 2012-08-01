@@ -24,51 +24,31 @@
     </div>
     
     <div class="row">
-      <h2 class="mb10">あなたのスキル</h2>
+      <h2 class="mb10">あなたのスキル(順次対応*乞うご期待)</h2>
       <div class="box">
         <div class="levels">
           <h3>MASTER</h3>
           <div>
-            <%@user_master_skills.each do |master_skill| %>
-              <%= master_skill.category_of_question.category_name%>
-              <%= master_skill.score.to_i%>
-            <% end %>
           </div>
         </div>
         <div class="levels">
           <h3>EXPERT</h3>
           <div>
-            <%@user_expert_skills.each do |expert_skill| %>
-              <%= expert_skill.category_of_question.category_name %>
-              <%= expert_skill.score.to_i%>
-            <% end %>
           </div>
         </div>
         <div class="levels">
           <h3>PROFICIENT</h3>
           <div>
-            <%@user_proficient_skills.each do |proficient_skill| %>
-              <%= proficient_skill.category_of_question.category_name %>
-              <%= proficient_skill.score.to_i %>
-            <% end %>
           </div>
         </div>
         <div class="levels">
           <h3>FAMILIAR</h3>
           <div>
-            <%@user_familiar_skills.each do |familiar_skill| %>
-              <%= familiar_skill.category_of_question.category_name %>
-              <%= familiar_skill.score.to_i %>
-            <% end %>
           </div>
         </div>
         <div class="levels">
           <h3>BEGINER</h3>
           <div>
-            <%@user_beginner_skills.each do |beginner_skill| %>
-              <%= beginner_skill.category_of_question.category_name %>
-              <%= beginner_skill.score.to_i %>
-            <% end %>
           </div>
         </div>
       </div>

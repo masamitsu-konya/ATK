@@ -7,11 +7,11 @@ class QuestionsController < ApplicationController
   
   def create
     @question = Question.new
-    if CategoryOfQuestion.where(:category_name => params[:category_of_question][:category_name]).blank?
+    if CategoryOfQuestion.where('category_name like ? ',"%" +params[:category_of_question][:category_name]+ "%" ).blank?
       @category_of_question = CategoryOfQuestion.new(params[:category_of_question])
       @category_of_question.save
     else
-      @category_of_question = CategoryOfQuestion.where(:category_name => params[:category_of_question][:category_name]).first
+      @category_of_question = CategoryOfQuestion.where('category_name like ? ',"%" +params[:category_of_question][:category_name]+ "%" ).first
     end
   end
 

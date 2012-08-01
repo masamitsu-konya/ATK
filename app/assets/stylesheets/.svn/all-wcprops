@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/305/trunk/app/assets/stylesheets
+/repos/atk/!svn/ver/367/trunk/app/assets/stylesheets
 END
 scores.css.scss
 K 25
@@ -13,7 +13,7 @@ tests.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/repos/atk/!svn/ver/249/trunk/app/assets/stylesheets/tests.css.scss
+/repos/atk/!svn/ver/355/trunk/app/assets/stylesheets/tests.css.scss
 END
 carousel.css
 K 25
@@ -37,7 +37,7 @@ common.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/repos/atk/!svn/ver/305/trunk/app/assets/stylesheets/common.css.scss
+/repos/atk/!svn/ver/355/trunk/app/assets/stylesheets/common.css.scss
 END
 admin.css.scss
 K 25
@@ -61,13 +61,13 @@ ranking.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/repos/atk/!svn/ver/190/trunk/app/assets/stylesheets/ranking.css.scss
+/repos/atk/!svn/ver/367/trunk/app/assets/stylesheets/ranking.css.scss
 END
 questions.css.scss
 K 25
 svn:wc:ra_dav:version-url
 V 71
-/repos/atk/!svn/ver/238/trunk/app/assets/stylesheets/questions.css.scss
+/repos/atk/!svn/ver/355/trunk/app/assets/stylesheets/questions.css.scss
 END
 welcome.css.scss
 K 25

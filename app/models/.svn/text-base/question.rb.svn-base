@@ -14,6 +14,8 @@ class Question < ActiveRecord::Base
    validates :answer_1, :presence => true
 
    scope :public, where(:public => true)
+   scope :except_experience, lambda{|user_id| where("not exists(select * from answers aw where aw.question_id = questions.id and aw.user_id = ?)", user_id)}
+   scope :choice_category, lambda{ |category_of_question_id| where("category_of_question_id = ?", category_of_question_id)}
 
    VERY_HARD=5
    HARD=4
@@ -56,10 +58,10 @@ class Question < ActiveRecord::Base
      correct_count = (Answer.where(:question_id => question_id, :correct => true).count)*1.0
      percentage_of_correct_answers = ((correct_count/question_count)*100).round
      case percentage_of_correct_answers
-     when 0..10 then question.rank = Question::VERY_HARD
-     when 11..20 then question.rank = Question::HARD
-     when 21..50 then question.rank = Question::MODERATE
-     when 51..70 then question.rank = Question::EASY
+     when 0..10 then question.rank = VERY_HARD
+     when 11..20 then question.rank = HARD
+     when 21..50 then question.rank = MODERATE
+     when 51..70 then question.rank = EASY
      else question.rank = Question::VERY_EASY
      end
      question.save!
@@ -87,6 +89,23 @@ class Question < ActiveRecord::Base
       self.rank = 5
     else
     end
+  end
+
+  def get_rank_key
+    case get_rank
+    when 1
+      "VE"
+    when 2
+      "E"
+    when 3
+      "M"
+    when 4
+      "H"
+    when 5
+      "VH"
+    else
+    end
+
   end
 
 end

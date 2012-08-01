@@ -6,16 +6,19 @@ class TestsController < ApplicationController
   end
 
   def search_test
-    if params[:search_words] && CategoryOfQuestion.where(:category_name => params[:search_words])
-      @title_of_test = CategoryOfQuestion.where(:category_name => params[:search_words]).first
+    if params[:search_words] && CategoryOfQuestion.where('category_name like ? ',"%" +params[:search_words]+ "%" ).present?
+      @title_of_test = CategoryOfQuestion.where('category_name like ? ',"%" +params[:search_words]+ "%" ).first
       redirect_to :action => :take_test, :id => @title_of_test.id
     else
-      redirect_to :controller => 'question', :action => 'index'
+      redirect_to :action => 'index'
     end
   end
 
   def take_test
     @test_category = CategoryOfQuestion.find(params[:id])
+    if Question.where("category_of_question_id = ?", @test_category.id).except_experience(@user.id).blank?
+      @result = false
+    end
   end
 
   # 練習問題
@@ -27,7 +30,7 @@ class TestsController < ApplicationController
 
   # 本番
   def test
-    @score = Score.where("category_of_question_id = ?", params[:category_of_question_id].to_i).find_by_user_id(session[:user_id])
+    @score = @user.scores.find_by_category_of_question_id(params[:category_of_question_id].to_i)
     if @score.nil?
       @score = Score.new
       @score.score_initialize
@@ -51,31 +54,18 @@ class TestsController < ApplicationController
 
     @question_count = params[:question_count] ? params[:question_count].to_i : 0
     @question_total_count = Question.where("category_of_question_id = ?", params[:category_of_question_id]).count - 1
-    @question = Question.where("id > ?", params[:question_id]).where("category_of_question_id = ?", params[:category_of_question_id]).first
+    @question = Question.where("category_of_question_id = ?", params[:category_of_question_id]).except_experience(@user.id).first
 
-    if @question.question_rating.nil?
-      @question_rating = QuestionRating.new(:question_id => @question.id, :rating => QuestionRating::INITIAL_RATING, :rd => QuestionRating::INITIAL_RD)
-      @question_rating.save
-    else
-      @question_rating = @question.question_rating
-    end
-    @level = define_level(@question.get_rank)
-  end
-
-  def define_level(rank)
-    case rank
-    when 1
-      "VE"
-    when 2
-      "E"
-    when 3
-      "M"
-    when 4
-      "H"
-    when 5
-      "VH"
-    else
+    if @question.present?
+      if @question.question_rating.nil?
+        @question_rating = QuestionRating.new(:question_id => @question.id, :rating => QuestionRating::INITIAL_RATING, :rd => QuestionRating::INITIAL_RD)
+        @question_rating.save
+      else
+        @question_rating = @question.question_rating
+      end
+      @level = @question.get_rank_key
     end
   end
+
 
 end

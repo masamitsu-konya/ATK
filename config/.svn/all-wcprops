@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 36
-/repos/atk/!svn/ver/329/trunk/config
+/repos/atk/!svn/ver/338/trunk/config
 END
 database.yml_
 K 25
@@ -37,5 +37,5 @@ environment.rb
 K 25
 svn:wc:ra_dav:version-url
 V 51
-/repos/atk/!svn/ver/299/trunk/config/environment.rb
+/repos/atk/!svn/ver/337/trunk/config/environment.rb
 END

@@ -105,13 +105,27 @@ class ApisController < ApplicationController
   end
 
   def regist_user_score
-    score = Score.calculate_score(params[:user_id], params[:question_id], params[:result], params[:time])
-    last_score = score.to_i + params[:sum_score].to_i
+    #score = Score.calculate_score(params[:user_id], params[:question_id], params[:result], params[:time])
+    #last_score = score.to_i + params[:sum_score].to_i
    #スコアを登録
-    Score.regist_user_score(params[:user_id].to_i, params[:category_id].to_i, last_score)
+    Score.regist_user_score(params[:user_id].to_i, params[:category_id].to_i, params[:rd_user].to_i, params[:score].to_i)
    #ランキングを更新
+    #@score = Score.where("category_of_question_id = ?", params[:category_of_question_id].to_i).find_by_user_id(session[:user_id])
+
+    #@score.score = params[:user_score].to_f
+    #@score.rd = params[:rd_user].to_f
+    #@score.save
+    #ランキングを更新
     Ranking.create_ranking(params[:category_id].to_i)
-    render :json => {:score => score}
+    render :json => {:score => "ok"}
+    #render :json => {:score => @score.score}
   end
 
+  def get_category
+    if params[:name].present? 
+      @categories = CategoryOfQuestion.where('category_name like ? ',"%" +params[:name]+ "%" )
+    else  
+      render :json =>{:result => 'false'}
+    end
+  end
 end

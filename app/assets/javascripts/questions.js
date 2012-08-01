@@ -1,4 +1,27 @@
 $(function(){
+  $('#category_of_question_name').bind("keyup",function(){
+    category_name={};
+    category_name['name']=$('#category_of_question_name').val();
+    $.ajax({
+      type: 'GET',
+      url: '/apis/get_category',
+      data:category_name,
+      success:function(data){
+        $('#category_name_box').html(data).css({display: 'block'});
+        if(data['result']=='false'){
+          $('#category_name_box').css({display: 'none'});
+        }
+      }
+    });
+  });
+  
+  $('#category_name_box p').live('click', function(){
+    $('#category_name_box').css({display: 'none'});
+  });
+  $('#input_name').live("click",function(){
+    $('#category_of_question_name').val($(this).text());
+  });
+
   $('#create_submit').click(function(e){
     if($('#question').val()==""){
       e.preventDefault();

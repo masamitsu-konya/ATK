@@ -1,25 +1,25 @@
 K 25
 svn:wc:ra_dav:version-url
 V 45
-/repos/atk/!svn/ver/330/trunk/app/controllers
+/repos/atk/!svn/ver/368/trunk/app/controllers
 END
 questions_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 69
-/repos/atk/!svn/ver/328/trunk/app/controllers/questions_controller.rb
+/repos/atk/!svn/ver/348/trunk/app/controllers/questions_controller.rb
 END
 welcome_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/repos/atk/!svn/ver/287/trunk/app/controllers/welcome_controller.rb
+/repos/atk/!svn/ver/365/trunk/app/controllers/welcome_controller.rb
 END
 apis_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 64
-/repos/atk/!svn/ver/330/trunk/app/controllers/apis_controller.rb
+/repos/atk/!svn/ver/370/trunk/app/controllers/apis_controller.rb
 END
 scores_controller.rb
 K 25
@@ -31,7 +31,7 @@ tests_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/repos/atk/!svn/ver/330/trunk/app/controllers/tests_controller.rb
+/repos/atk/!svn/ver/368/trunk/app/controllers/tests_controller.rb
 END
 application_controller.rb
 K 25
@@ -43,7 +43,7 @@ sessions_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 68
-/repos/atk/!svn/ver/289/trunk/app/controllers/sessions_controller.rb
+/repos/atk/!svn/ver/341/trunk/app/controllers/sessions_controller.rb
 END
 admin_controller.rb
 K 25
@@ -55,5 +55,5 @@ ranking_controller.rb
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/repos/atk/!svn/ver/291/trunk/app/controllers/ranking_controller.rb
+/repos/atk/!svn/ver/345/trunk/app/controllers/ranking_controller.rb
 END

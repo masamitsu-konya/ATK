@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120729135154) do
+ActiveRecord::Schema.define(:version => 20120801123107) do
 
   create_table "answers", :force => true do |t|
     t.integer  "user_id"
@@ -72,6 +72,7 @@ ActiveRecord::Schema.define(:version => 20120729135154) do
     t.integer  "user_id"
     t.datetime "created_at",              :null => false
     t.datetime "updated_at",              :null => false
+    t.integer  "score"
   end
 
   create_table "scores", :force => true do |t|

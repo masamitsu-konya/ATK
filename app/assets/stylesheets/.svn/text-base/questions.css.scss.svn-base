@@ -1,18 +1,16 @@
-textarea.question{
-  width: 80%;
-  height: 200px;
-}
-.question_create_form{
-  width: 60%;
-  padding: 20px;
-  float: left;
-  border: 1px solid;
-  -webkit-box-shadow: 0 0 3px #DEDEDE;
-  box-shadow:0 0 3px;
-  margin-bottom: 20px;
-}
-.category_of_question_title{
-  margin: 0 auto;
-  height: 300px;
-}
+#category_name_box {
+  border: 1px solid #d5d5d5;
+  display: none;
+  margin: -15px 0 0 0;
 
+  p {
+    color: #555;
+    font-size: 16px;
+    margin: 0 0 10px;
+  }
+
+  p:hover {
+    color: #0099ee;
+    cursor: pointer;
+  }
+}

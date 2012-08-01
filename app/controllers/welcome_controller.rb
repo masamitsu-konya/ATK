@@ -9,11 +9,11 @@ class WelcomeController < ApplicationController
       @user = User.find(session[:user_id])  
       @user_questions_categories = @user.questions.map(&:category_of_question).uniq
       @user_questions = @user.questions
-      @user_beginner_skills = @user.scores.beginner
-      @user_familiar_skills = @user.scores.familiar
-      @user_proficient_skills = @user.scores.proficient
-      @user_expert_skills = @user.scores.expert
-      @user_master_skills = @user.scores.master
+      #@user_beginner_skills = @user.scores.beginner
+      #@user_familiar_skills = @user.scores.familiar
+      #@user_proficient_skills = @user.scores.proficient
+      #@user_expert_skills = @user.scores.expert
+      #@user_master_skills = @user.scores.master
     end
     @recommend_categories = CategoryOfQuestion.all
   end

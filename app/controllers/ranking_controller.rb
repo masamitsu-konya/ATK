@@ -6,10 +6,11 @@ class RankingController < ApplicationController
  #カテゴリーを選択した場合 
       if params[:id] 
         @ranking_category = CategoryOfQuestion.find(params[:id])
+        @ranking = Ranking.where(:category_of_question_id => @ranking_category.id)
       else 
         @ranking_category = @user.scores.order('updated_at ASC').map(&:category_of_question).last
+        @ranking = Ranking.where(:category_of_question_id => @ranking_category.id)
       end
-      @ranking = Ranking.where(:category_of_question_id => @ranking_category.id)
     end
   end
 end

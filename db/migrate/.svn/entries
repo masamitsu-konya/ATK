@@ -1,14 +1,14 @@
 10
 
 dir
-330
+369
 http://192.168.1.205/repos/atk/trunk/db/migrate
 http://192.168.1.205/repos/atk
 
 
 
-2012-07-29T14:00:12.253649Z
-276
+2012-08-01T12:49:07.656787Z
+350
 igpuser
 
 
@@ -25,74 +25,6 @@ igpuser
 
 
 b7584831-a532-46ce-b807-722f8a380bd8
-
-20120709141807_create_answers.rb
-file
-
-
-
-
-2012-07-10T13:24:08.000000Z
-12c72d3242840ce565d7a83add859b23
-2012-07-09T15:50:44.929793Z
-107
-igpuser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-279
-
-20120709154707_add_nursery_to_users.rb
-file
-
-
-
-
-2012-07-10T13:24:08.000000Z
-5ea65e1736564c5780bcf49f6c1538c1
-2012-07-09T15:50:44.929793Z
-107
-igpuser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-115
 
 20120724131043_create_question_ratings.rb
 file
@@ -128,6 +60,74 @@ igpuser
 
 262
 
+20120709154707_add_nursery_to_users.rb
+file
+
+
+
+
+2012-07-10T13:24:08.000000Z
+5ea65e1736564c5780bcf49f6c1538c1
+2012-07-09T15:50:44.929793Z
+107
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+115
+
+20120709141807_create_answers.rb
+file
+
+
+
+
+2012-07-10T13:24:08.000000Z
+12c72d3242840ce565d7a83add859b23
+2012-07-09T15:50:44.929793Z
+107
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+279
+
 20120729135133_add_column_deleted_at_to_score.rb
 file
 
@@ -161,40 +161,6 @@ igpuser
 
 
 128
-
-20120611132724_create_users.rb
-file
-
-
-
-
-2012-07-07T07:30:01.000000Z
-e4b4eab1421bccc6e0f6259b3ca9b85a
-2012-07-08T14:32:01.705614Z
-82
-igpuser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-412
 
 20120729134024_add_column_deleted_at_to_user.rb
 file
@@ -230,6 +196,40 @@ igpuser
 
 126
 
+20120611132724_create_users.rb
+file
+
+
+
+
+2012-07-07T07:30:01.000000Z
+e4b4eab1421bccc6e0f6259b3ca9b85a
+2012-07-08T14:32:01.705614Z
+82
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+412
+
 20120724125136_create_scores.rb
 file
 
@@ -263,40 +263,6 @@ igpuser
 
 
 313
-
-20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
-file
-
-
-
-
-2012-07-18T13:52:31.000000Z
-75e15be0ea68a92bc5a6d46b2e8ed0aa
-2012-07-18T16:18:54.638092Z
-182
-igpuser
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-291
 
 20120729135059_add_column_deleted_at_to_question.rb
 file
@@ -332,6 +298,40 @@ igpuser
 
 134
 
+20120709154830_add_rank_and_public_and_score_and_time_to_questions.rb
+file
+
+
+
+
+2012-07-18T13:52:31.000000Z
+75e15be0ea68a92bc5a6d46b2e8ed0aa
+2012-07-18T16:18:54.638092Z
+182
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+291
+
 20120717152917_create_user_friends.rb
 file
 
@@ -365,6 +365,40 @@ igpuser
 
 
 231
+
+20120801123107_add_column_score_to_rankings.rb
+file
+
+
+
+
+2012-08-01T12:31:46.000000Z
+c49f418443ab8e540fda5a0f064aa299
+2012-08-01T12:49:07.656787Z
+350
+igpuser
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+123
 
 20120729135154_add_column_deleted_at_to_category_of_question.rb
 file

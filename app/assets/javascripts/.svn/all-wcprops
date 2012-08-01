@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 52
-/repos/atk/!svn/ver/330/trunk/app/assets/javascripts
+/repos/atk/!svn/ver/369/trunk/app/assets/javascripts
 END
 bootstrap-popover.js
 K 25
@@ -67,7 +67,7 @@ questions.js
 K 25
 svn:wc:ra_dav:version-url
 V 65
-/repos/atk/!svn/ver/324/trunk/app/assets/javascripts/questions.js
+/repos/atk/!svn/ver/357/trunk/app/assets/javascripts/questions.js
 END
 welcome.js
 K 25
@@ -85,7 +85,7 @@ tests.js
 K 25
 svn:wc:ra_dav:version-url
 V 61
-/repos/atk/!svn/ver/330/trunk/app/assets/javascripts/tests.js
+/repos/atk/!svn/ver/369/trunk/app/assets/javascripts/tests.js
 END
 application.js
 K 25

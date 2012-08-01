@@ -1,14 +1,14 @@
 <div id="create_question_row" class="row">
   <div class="span8">
     <h1>問題作成</h1>
-    <p>４択で問題を作ってください。</p>
+    <p class="f16 mb10">４択で問題を作ってください。</p>
     <input id="category_of_question" type="hidden" value="<%=@category_of_question.id %>">
-    <p class="title">問題</p>
+    <p class="f14 mb3">問題</p>
     <textarea id="question" cols="20" name="question[question]" rows="20" placeholder="問題を入力してください。" class="span8 question-textarea"></textarea>
     <div class="answer-box">
-      <p class="title">正解</p>
+      <p class="f14 mb3">正解</p>
       <input id="question_correct_answer" name="question[correct_answer]" size="30" type="text" placeholder="正解を入力してください" class="span8">
-      <p class="title">間違い</p>
+      <p class="f14 mb3">間違い</p>
       <input id="question_answer_1" name="question[answer_1]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
       <input id="question_answer_2" name="question[answer_2]" size="30" type="text" placeholder="間違いを入力してください" class="span8">
       <input id="question_answer_3" name="question[answer_3]" size="30" type="text" placeholder="間違いを入力してください" class="span8">

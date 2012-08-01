@@ -1,15 +1,54 @@
-// Place all the styles related to the ranking controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: http://sass-lang.com/
+@import 'common.css.scss';
 
-.ranking_list{
-  list-style-type:none; 
-  margin: 20px;
+.ranking-side-box {
+  
+  div {
+    background: #fff;
+    
+    h3 {
+      color: #555;
+    }
+
+    a {
+      color: #555;
+      display: block;
+      margin: 10px 0;
+      overflow: hidden;
+
+      span {
+        @include textShadow();
+        font-family: $cantarell;
+        font-size: 20px;
+        margin: 0 0 0 10px;
+      }
+    }
+  }
 }
 
-.past_test_list{
-  float:left
-}
-.ranking_list{
-  margin-left: 180px;
+.ranking-box {
+  
+  h2 {
+    margin: 0 0 10px;
+  }
+  
+  td {
+    vertical-align: middle;
+  }
+
+  .rank {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  .user {
+    color: #555;
+    font-size: 18px;
+  }
+
+  .score {
+    font-size: 24px;
+    font-weight: bold;
+    text-align: center;
+  }
 }

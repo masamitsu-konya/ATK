@@ -1,5 +1,5 @@
 class Ranking < ActiveRecord::Base
-  attr_accessible :category_of_question_id, :user_id, :rank
+  attr_accessible :category_of_question_id, :user_id, :rank, :score
 
   validates :user_id, :presence => true
   validates :category_of_question_id, :presence => true
@@ -19,7 +19,7 @@ class Ranking < ActiveRecord::Base
         rank = 0
         user_scores.each do |user_score|
           rank +=1
-          @ranking = Ranking.new(:category_of_question_id => category_id, :user_id => user_score.user_id, :rank=> rank)    
+          @ranking = Ranking.new(:category_of_question_id => category_id, :user_id => user_score.user_id, :rank=> rank, :score => user_score.score)    
           @ranking.save
         end
     end
