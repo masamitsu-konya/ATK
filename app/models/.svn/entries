@@ -1,14 +1,14 @@
 10
 
 dir
-369
+376
 http://192.168.1.205/repos/atk/trunk/app/models
 http://192.168.1.205/repos/atk
 
 
 
-2012-08-01T14:02:46.797708Z
-363
+2012-08-01T16:59:52.074180Z
+372
 igpuser
 
 
@@ -266,7 +266,7 @@ igpuser
 
 ranking.rb
 file
-372
+
 
 
 
@@ -300,7 +300,7 @@ igpuser
 
 score.rb
 file
-371
+
 
 
 

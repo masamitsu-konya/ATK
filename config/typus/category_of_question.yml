@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+CategoryOfQuestion:
+  fields:
+    default: category_name, category_image_uid
+    form: category_name, category_image_uid
+  relationships: questions, rankings
+  application: Application

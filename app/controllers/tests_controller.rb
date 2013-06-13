@@ -55,6 +55,10 @@ class TestsController < ApplicationController
     @question_count = params[:question_count] ? params[:question_count].to_i : 0
     @question_total_count = Question.where("category_of_question_id = ?", params[:category_of_question_id]).count - 1
     @question = Question.where("category_of_question_id = ?", params[:category_of_question_id]).except_experience(@user.id).first
+    
+    if @question.nil?
+      redirect_to :controller => :welcome, :action => :index
+    end
 
     if @question.present?
       if @question.question_rating.nil?

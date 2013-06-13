@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+User:
+  fields:
+    default: last_name, first_name, location, company, nickname, email, image_url, uid, access_token, provider, nursery
+    form: last_name, first_name, location, company, nickname, email, image_url, uid, access_token, provider, nursery
+  relationships: user_questions, scores, questions, user_friends, rankings
+  application: Application

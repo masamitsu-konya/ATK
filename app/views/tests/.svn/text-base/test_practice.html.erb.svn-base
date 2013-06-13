@@ -2,7 +2,7 @@
 
   <div class="span2">
     <h1 class="category-info-box">
-      <%= image_tag @sample_question.category_of_question.category_image.url %>
+      <%= image_tag @sample_question.category_of_question.category_image.url if @sample_question.category_of_question.category_image%>
       <%= @sample_question.category_of_question.category_name %>
     </h1>
   </div>

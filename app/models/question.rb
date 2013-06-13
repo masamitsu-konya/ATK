@@ -52,6 +52,14 @@ class Question < ActiveRecord::Base
      return @test
    end
 
+   def correct_rate(question_id)
+     question = Question.where(:id => question_id).first
+     question_count = (Answer.where(:question_id => question_id).count)*1.0
+     correct_count = (Answer.where(:question_id => question_id, :correct => true).count)*1.0
+     percentage_of_correct_answers = ((correct_count/question_count)*100).round
+     return percentage_of_correct_answers
+   end
+
    def update_rank(question_id)
      question = Question.where(:id => question_id).first
      question_count = (Answer.where(:question_id => question_id).count)*1.0

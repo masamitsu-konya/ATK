@@ -38,4 +38,8 @@ Atk::Application.routes.draw do
   match '/admin/edit_question' => 'admin#edit_question'
   match '/admin/accept_public' => 'admin#accept_public'
 
+  match '/author/' => 'author#index'
+
+  match ':controller(/:action(/:id))(.:format)'
+
 end

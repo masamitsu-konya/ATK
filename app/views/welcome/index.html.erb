@@ -67,7 +67,7 @@
     <div class="mb40">
       <h3>あなたが出題した問題</h3>
       <% @user_questions_categories.each do |user_questions_category| %>
-        カテゴリー： <%=link_to user_questions_category.category_name, :controller =>'tests', :action =>'take_test',:id => user_questions_category.id  %>&nbsp;<%= @user.questions.where(:category_of_question_id => user_questions_category.id).count %>問<br /> 
+        カテゴリー： <%=link_to user_questions_category.category_name, :controller =>'author', :action =>'index',:id => user_questions_category.id  %>&nbsp;<%= @user.questions.where(:category_of_question_id => user_questions_category.id).count %>問<br /> 
       <% end %>
     </div>
     <h4>スキルレベル</h4>

@@ -8,6 +8,8 @@ gem 'jquery-rails', '>= 0.2.6'
 gem 'rmagick', :require => 'RMagick'
 gem 'rails3_acts_as_paranoid'
 
+gem 'typus', :git => 'http://github.com/fesplugas/typus.git'
+
 group :development, :test do
   if RUBY_VERSION =~ /1.9/
     gem 'ruby-debug19'

@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+Score:
+  fields:
+    default: user_id, rd, score, category_of_question_id
+    form: user_id, rd, score, category_of_question_id
+  relationships: 
+  application: Application

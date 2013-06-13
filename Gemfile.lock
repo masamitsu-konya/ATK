@@ -1,3 +1,12 @@
+GIT
+  remote: http://github.com/fesplugas/typus.git
+  revision: 177d0495f4c3a5d54ca4523fc768c69fbfb7c3d2
+  specs:
+    typus (3.2.0)
+      bcrypt-ruby (~> 3.0.1)
+      jquery-rails (~> 2.0.1)
+      rails (~> 3.2.6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -30,6 +39,7 @@ GEM
       multi_json (~> 1.0)
     archive-tar-minitar (0.5.2)
     arel (3.0.2)
+    bcrypt-ruby (3.0.1)
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -195,4 +205,5 @@ DEPENDENCIES
   therubyracer
   thor (= 0.15.4)
   twitter-bootstrap-rails
+  typus!
   uglifier (>= 1.0.3)

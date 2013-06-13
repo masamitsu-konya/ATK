@@ -1,0 +1,8 @@
+# Use the README file as a reference to customize settings.
+
+QuestionRating:
+  fields:
+    default: question_id, rating, rd
+    form: question_id, rating, rd
+  relationships: 
+  application: Application

@@ -29,7 +29,7 @@ $(function(){
 
   $('#finish_btn').live("click",function(e){
     e.preventDefault();
-    location.href = "http://192.168.1.205:3006/";
+    location.href = "http://192.168.1.205:3000/";
   });
 
   for(i=0;i<4;i++){
@@ -124,7 +124,6 @@ $(function(){
             $('.user_id').val(user_id);
             $(".result_array_user").val(data["result_array_user"])
           } else {
-            alert('終了');
             $("#" + now_correct_answer).addClass('right-answer');
             $("#" + user_answer).addClass('no-right-answer');
             var return_score = parseInt(data['score']);
@@ -202,7 +201,6 @@ $(function(){
           $('.test_sum_score').text(return_score);
           $('.user_id').val(user_id);
         } else if (question_count == parseInt(question_total_count) || question_count > 9) {        
-          alert('終了');
           if (result == true) {
             $("#" + now_correct_answer).addClass('right-answer');
           } else {
